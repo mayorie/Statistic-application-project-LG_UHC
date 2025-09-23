@@ -5,9 +5,9 @@
 #include <regex>
 
 class log_brut {
-private : 
+private:
 	std::ifstream fs_log_brut;
-public : 
+public:
 	log_brut(std::string chemin); //constructeur
 	bool kill(std::string chemin); //destructeur (détruit le ifstream et le fichier)
 

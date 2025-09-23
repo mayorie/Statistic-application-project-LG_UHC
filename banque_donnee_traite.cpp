@@ -17,14 +17,14 @@ banque_donnee_traite::banque_donnee_traite()
                                             "Vilain Petit Loup","Loup - Garou Blanc","Ange","Assassin","Feu Follet",
                                             "Imitateur","Joueur de Flûte","Nécromancien","Pyromane","Rival",
                                             "Ronin","Voyou","Chien - Loup","Cupidon","Enfant Sauvage",
-                                            "Renégat","Trublion","Voleur"};
-    for(auto& role : list_roles)
+                                            "Renégat","Trublion","Voleur" };
+    for (auto& role : list_roles)
     {
         game_data_list.emplace_back(role, std::vector<std::shared_ptr<data_game>>{});
     }
 }
 
-void banque_donnee_traite::add(std::shared_ptr<data_game> game){
+void banque_donnee_traite::add(std::shared_ptr<data_game> game) {
     for (int i = 0;i < game_data_list.size();++i)
         if (game_data_list[i].first == game->get_role())
             game_data_list[i].second.push_back(game);

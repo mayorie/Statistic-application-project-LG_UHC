@@ -3,7 +3,7 @@
 #include <ctime>
 
 class data_game {
-private : 
+private:
     struct GameEntry {
         std::time_t start_game;
         std::string role;
@@ -12,10 +12,11 @@ private :
     };
     GameEntry entry;
 
-public : 
+public:
 
     data_game(std::time_t timestamp, std::string& role, std::string& winning_camp)
-        : entry{timestamp,role,winning_camp} { }
+        : entry{ timestamp,role,winning_camp } {
+    }
     data_game() {}
 
     const std::time_t& get_start_game() const { return entry.start_game; }

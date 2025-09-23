@@ -15,6 +15,8 @@ data_game main_traitement(log_brut data_brut)
     std::smatch matches;
 
     bool game_started = false; // état pour savoir quel regex utiliser
+    bool role_given = false; // état pour savoir quel regex utiliser
+
 
     while (!data_brut.empty())
     {
@@ -29,7 +31,7 @@ data_game main_traitement(log_brut data_brut)
                 game_started = true;
             }
         }
-        else // une fois que le premier regex a matche
+        else if(!role_given)
         {
             if (std::regex_search(str_actual, matches, reg_role))
             {

@@ -7,7 +7,7 @@
 
 
 int main() {
-	
+
 	//récupération des données
 	std::string chemin = "C:\\Users\\matts\\AppData\\Roaming\\.minecraft\\versions\\TEST chatlog\\chatlogs\\2025-07-27.htm";
 
@@ -24,7 +24,7 @@ int main() {
 		std::cout << ligne << std::endl; // Affiche chaque ligne lue
 		ligne = fichier_log.give_line_kill_line();
 	}
-	
+
 	traitement_test(); //compréhention des regex
 
 	return 0;
