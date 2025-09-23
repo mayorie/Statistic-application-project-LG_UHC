@@ -107,7 +107,7 @@ int traitement_test()
 
 
 
-data_game traitement(log_brut log, std::string str_log_actuelle)
+void traitement(log_brut log, std::string str_log_actuelle)
 {
 	std::smatch matches;
 	//recherche du start de la game

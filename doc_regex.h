@@ -11,5 +11,5 @@ int traitement_test();
 void print_matches(std::string str, std::regex reg);
 void print_matches2(std::string str, std::regex reg);
 void print_start(std::string str, std::regex reg);
-data_game traitement(log_brut log, std::string str_log_actuelle);
+void traitement(log_brut log, std::string str_log_actuelle);
 
