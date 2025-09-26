@@ -1,8 +1,11 @@
 #include "traitement_donnees.h"
 
-std::array<std::string, 4> treatement_lguhc(std::array<std::string, 4> &result,log_brut &data_brut, std::string &str_actual, std::array<std::regex, 2> &liste_reg)
+std::array<std::string, 4> treatement_lguhc(std::array<std::string, 4> &result,log_brut &data_brut, std::string &str_actual, std::array<std::regex, 2> &liste_reg, bool disconnected)
 {
+    while (!data_brut.empty() && !disconnected)
+    {
 
+    }
 }
 
 
@@ -21,21 +24,21 @@ data_game main_treatement(log_brut &data_brut)
 
     //data_game(std::time_t timestamp, std::string & role, std::string & winning_camp)
 
+    bool disconnected = false;
 
-    while (!data_brut.empty())
+    while (!data_brut.empty() && !disconnected)
     {
         std::string str_actual = data_brut.give_line_kill_line();
+        while(std::regex_search(str_actual, matches, liste_reg[0]))
 
-        if (!result[0].empty()) // tant que la partie n’a pas commencé
-        {
-            if (std::regex_search(str_actual, matches, liste_reg[0]))
+
+            if(matches.str(2)=="LG UHC")
             {
                 // -> première détection : partie commence
                 result[0] = matches.str(1);
                 if (matches.str(2) == "LG UHC")//pas sure du "lg" peut etre lguhc
-                    treatement_lguhc(result, data_brut, str_actual, liste_reg);
+                    treatement_lguhc(result, data_brut, str_actual, liste_reg, disconnected);
             }
-        }
         
     }
 
