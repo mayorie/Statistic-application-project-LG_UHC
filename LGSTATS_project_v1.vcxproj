@@ -127,14 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="banque_donnee_traite.h" />
     <ClInclude Include="data_game.h" />
     <ClInclude Include="doc_regex.h" />
     <ClInclude Include="recup_donnee_brut.h" />
     <ClInclude Include="traitement_donnees.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="banque_donnee_traite.cpp" />
     <ClCompile Include="doc_regex.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="recup_donnee_brut.cpp" />

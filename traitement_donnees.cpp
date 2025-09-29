@@ -2,10 +2,17 @@
 
 std::array<std::string, 4> treatement_lguhc(std::array<std::string, 4> &result,log_brut &data_brut, std::string &str_actual, std::array<std::regex, 2> &liste_reg, bool disconnected)
 {
+    std::smatch matches;
+
+    std::cout << "entré traitement de donnée lguhc";
     while (!data_brut.empty() && !disconnected)
     {
+        while (std::regex_search(str_actual, matches, liste_reg[1]))
+        {
 
+        }
     }
+    return result;
 }
 
 
@@ -22,18 +29,25 @@ data_game main_treatement(log_brut &data_brut)
 
     std::smatch matches;
 
+    std::cout << "entré main_treatement";
+
     //data_game(std::time_t timestamp, std::string & role, std::string & winning_camp)
 
     bool disconnected = false;
 
+    std::string str_actual = data_brut.give_line_kill_line();
+
     while (!data_brut.empty() && !disconnected)
     {
-        std::string str_actual = data_brut.give_line_kill_line();
         while(std::regex_search(str_actual, matches, liste_reg[0]))
+            
+        str_actual = data_brut.give_line_kill_line();
 
 
             if(matches.str(2)=="LG UHC")
             {
+                std::cout << "entré if pour regex start game";
+
                 // -> première détection : partie commence
                 result[0] = matches.str(1);
                 if (matches.str(2) == "LG UHC")//pas sure du "lg" peut etre lguhc
