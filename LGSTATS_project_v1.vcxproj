@@ -127,15 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="creation_bd.h" />
     <ClInclude Include="data_game.h" />
     <ClInclude Include="doc_regex.h" />
     <ClInclude Include="recup_donnee_brut.h" />
+    <ClInclude Include="sqlite3.h" />
     <ClInclude Include="traitement_donnees.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="creation_bd.cpp" />
     <ClCompile Include="doc_regex.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="recup_donnee_brut.cpp" />
+    <ClCompile Include="sqlite3.c" />
     <ClCompile Include="traitement_donnees.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

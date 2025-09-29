@@ -1,5 +1,6 @@
 #include "recup_donnee_brut.h"
 #include "doc_regex.h"
+#include "creation_bd.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -11,6 +12,9 @@ int main() {
 	std::string chemin = "C:\\Users\\matts\\AppData\\Roaming\\.minecraft\\versions\\TEST chatlog\\chatlogs\\2025-07-27.htm";
 
 	//initialisation
+	// création base de donnée.
+	create_stats_lguhc();
+
 	//création du fichier des log bruts et récupération de ces données
 	log_brut fichier_log(chemin);
 
