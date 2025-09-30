@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="banque_donnee_traite.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="data_game.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -30,11 +27,14 @@
     <ClInclude Include="traitement_donnees.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="creation_bd.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="banque_donnee_traite.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="doc_regex.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
@@ -45,6 +45,12 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="traitement_donnees.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="creation_bd.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
