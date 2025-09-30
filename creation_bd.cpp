@@ -202,7 +202,41 @@ int insert_game(int id_role, int camp, std::string start_game, std::string event
     return rc;
 }
 
+int delete_game(int id_game)
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int rc = sqlite3_open("stats_lguhc.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return rc;
+    }
 
+    const char* sqlDelete = "DELETE FROM game WHERE id_game = ? ;";
+
+    rc = sqlite3_prepare_v2(db, sqlDelete, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return rc;
+    }
+
+    // Bind du paramètre (id_game)
+    sqlite3_bind_int(stmt, 1, id_game);
+
+    // Exécution
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Erreur suppression de la game: " << sqlite3_errmsg(db) << std::endl;
+    }
+    else {
+        std::cout << "Game avec id " << id_game << " supprimée avec succès !" << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return rc;
+}
 
 
 // Sélectionne et affiche toutes les lignes d'une table donnée

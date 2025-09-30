@@ -28,6 +28,9 @@ int main() {
 	//select all sur une table
 	select_all_from_table("game"); //"game", "role", "role_camp", "gameplay"
 
+	//delete
+	//delete_game(int id_game)
+
 	//création du fichier des log bruts et récupération de ces données
 	log_brut fichier_log(chemin);
 
