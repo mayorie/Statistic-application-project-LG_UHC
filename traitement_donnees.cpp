@@ -1,13 +1,24 @@
 #include "traitement_donnees.h"
 
-std::array<std::string, 4> treatement_lguhc(std::array<std::string, 4> &result,log_brut &data_brut, std::string &str_actual, std::array<std::regex, 2> &liste_reg, bool disconnected)
+//init du traitement lguhc, je trouve le camp et le role de ta game jusqu'à 45min, traitant des events suivants : 
+//couple
+//protégé
+//events selon le role attribué : cupidon, voleur, enfant sauvage, chien-loup, renégat, trublion, voleur
+//attribué le camp selon le role sinon
+std::array<std::string, 4> init_treatement_lguhc(std::array<std::string, 4> &result,log_brut &data_brut, std::string &str_actual, bool disconnected)
 {
     std::smatch matches;
+
+    //liste des regex nécéssaires pour l'init des camp et roles seulement
+    std::array<std::regex, 1> liste_reg{
+   std::regex(R"(\[(\d{2}:\d{2}:\d{2})\].*?<span style="color: #555;">• <\/span>.*?<span style="color: #AAA;">Vous êtes <\/span>.*?<span[^>]*>([^<]+)<\/span>)")
+    }; //0 = reg_role
 
     std::cout << "entré traitement de donnée lguhc";
     while (!data_brut.empty() && !disconnected)
     {
-        while (std::regex_search(str_actual, matches, liste_reg[1]))
+        bool role_pris = false;
+        while (std::regex_search(str_actual, matches, liste_reg[0]))
         {
 
         }
@@ -17,60 +28,35 @@ std::array<std::string, 4> treatement_lguhc(std::array<std::string, 4> &result,l
 
 
 
-
+//recherche de quelle type de game on fait, LGUHC, CHAINSAWMANUHC, AOTUHC
 data_game main_treatement(log_brut &data_brut)
 {
-    std::array<std::regex, 2> liste_reg{
-    std::regex(R"(\[(\d{2}:\d{2}:\d{2})\].*?UHC.*?Bienvenue dans cette partie de.*?(LG UHC))"),
-    std::regex(R"(\[(\d{2}:\d{2}:\d{2})\].*?<span style="color: #555;">• <\/span>.*?<span style="color: #AAA;">Vous êtes <\/span>.*?<span[^>]*>([^<]+)<\/span>)")
-    }; //0=reg_startgame, 1 = reg_role
-
-    std::array<std::string, 4> result;//0 = start_game, 1 = role, 2 = winning_camp, 3 = event_game
-
+    //initialisation des variables
+    //init pour le regex
+    static std::regex reg_start(R"(\[(\d{2}:\d{2}:\d{2})\].*?UHC.*?Bienvenue dans cette partie de.*?(LG UHC S\d+\.\d+))");//regex pour voir quelle type de game c'est
     std::smatch matches;
+    std::string str_actual = data_brut.give_line_kill_line();//init de la string de la data_brut
+
+    std::array<std::string, 4> result;//0 = start_game, 1 = role, 2 = winning_camp, 3 = event_game //une manière de stocker temporèrement les données //à changer pour un txt qui se modifie au fur et à mesure
+    bool disconnected = false;//futur manière de savoir si le joueur s'est déconnecté, et voir si il s'est reconnecté
 
     std::cout << "entré main_treatement";
 
-    //data_game(std::time_t timestamp, std::string & role, std::string & winning_camp)
-
-    bool disconnected = false;
-
-    std::string str_actual = data_brut.give_line_kill_line();
-
-    while (!data_brut.empty() && !disconnected)
+    while (!data_brut.empty() && !disconnected)//boucle pour chaque ligne str_actual du data_brut
     {
-        while(std::regex_search(str_actual, matches, liste_reg[0]))
-            
-        str_actual = data_brut.give_line_kill_line();
-
-
-            if(matches.str(2)=="LG UHC")
+        while(std::regex_search(str_actual, matches, reg_start))//vérif que dans str_actual il y a le regex ou non
+        {
+            if (matches.str(2) == "LG UHC")
             {
                 std::cout << "entré if pour regex start game";
 
                 // -> première détection : partie commence
                 result[0] = matches.str(1);
                 if (matches.str(2) == "LG UHC")//pas sure du "lg" peut etre lguhc
-                    treatement_lguhc(result, data_brut, str_actual, liste_reg, disconnected);
+                    init_treatement_lguhc(result, data_brut, str_actual, disconnected);
             }
-        
+        }
+        str_actual = data_brut.give_line_kill_line();
     }
-
-
-    //else if (!role_given)
-    //{
-    //    if (std::regex_search(str_actual, matches, reg_role))
-    //    {
-    //        // -> Ici tu fais ton traitement spécial avec le 2e regex
-    //        result[1] = matches.str(2);
-    //    }
-    //    }
-
-
-
-
-
-
-
     return data_game();
 }
