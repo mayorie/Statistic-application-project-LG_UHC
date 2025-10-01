@@ -54,4 +54,72 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="chatogs\chatogs\2025-07-27.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-07-28.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-07-29.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-07-31.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-02.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-03.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-04.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-05.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-06.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-14.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-15.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-16.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-17.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-18.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-19.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-20.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-21.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-23.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-30.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-09-06.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-09-10.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="chatogs\chatogs\2025-09-17.htm">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+  </ItemGroup>
 </Project>

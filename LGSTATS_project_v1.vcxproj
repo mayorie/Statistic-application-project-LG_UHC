@@ -142,6 +142,74 @@
     <ClCompile Include="sqlite3.c" />
     <ClCompile Include="traitement_donnees.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="chatogs\chatogs\2025-07-27.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-07-28.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-07-29.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-07-31.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-02.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-03.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-04.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-05.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-06.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-14.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-15.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-16.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-17.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-18.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-19.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-20.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-21.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-23.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-08-30.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-09-06.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-09-10.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="chatogs\chatogs\2025-09-17.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
