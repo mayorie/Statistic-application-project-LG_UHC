@@ -304,3 +304,38 @@ int select_all_from_table(const std::string& tableName)
     sqlite3_close(db);
     return SQLITE_OK;
 }
+
+
+int delete_all_games()
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int rc = sqlite3_open("stats_lguhc.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return rc;
+    }
+
+    const char* sqlDelete = "DELETE FROM game;"
+        "DELETE FROM sqlite_sequence WHERE name='game';";
+
+    rc = sqlite3_prepare_v2(db, sqlDelete, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return rc;
+    }
+
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Erreur suppression de toutes les games: " << sqlite3_errmsg(db) << std::endl;
+    }
+    else {
+        std::cout << "Toutes les games ont été supprimées avec succès !" << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+
+    sqlite3_close(db);
+    return rc;
+}

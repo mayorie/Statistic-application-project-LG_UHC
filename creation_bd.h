@@ -16,3 +16,6 @@ int delete_game(int id_game);
 
 //permet de selct et d'afficher toutes les données d'une table
 int select_all_from_table(const std::string& tableName);//"game", "role", "role_camp", "gameplay"
+
+//suprétion du contenu de la table game et reset des ids
+int delete_all_games();
