@@ -209,6 +209,7 @@
     <None Include="chatogs\chatogs\2025-09-17.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,11 +10,11 @@
 int main() {
 
 	//récupération des données
-	std::string chemin = "C:/Users/mayorie/Desktop/chatogs/2025-07-27.htm";
+	std::string chemin = "C:/Users/matts/Documents/GitHub/Statistic-application-project-LG_UHC/chatogs/chatogs/2025-07-28.htm";
 
 	//initialisation
 	// création base de donnée.
-	create_stats_lguhc();
+	create_bd_stats();
 
 	//insert une game
 	//insert_game(

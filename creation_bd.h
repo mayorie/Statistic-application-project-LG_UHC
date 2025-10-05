@@ -6,7 +6,7 @@
 
 
 //initialise la base de donnée
-int create_stats_lguhc();
+int create_bd_stats();
 
 //ajoute les datas d'une game dans la table game
 int insert_game(int id_role, int camp, std::string start_game, std::string event_ingame, bool win, std::string comment);

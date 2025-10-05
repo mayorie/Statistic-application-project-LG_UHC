@@ -121,5 +121,6 @@
     <None Include="chatogs\chatogs\2025-09-17.htm">
       <Filter>Fichiers de ressources</Filter>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>

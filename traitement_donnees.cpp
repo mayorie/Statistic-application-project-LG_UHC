@@ -1,5 +1,16 @@
 #include "traitement_donnees.h"
 
+
+//regarde le camp du joueur selon son role
+std::string init_camp_lguhc(std::string role)
+{
+
+    return;
+}
+
+
+
+
 //init du traitement lguhc, je trouve le camp et le role de ta game jusqu'à 45min, traitant des events suivants : 
 //couple
 //protégé
@@ -20,11 +31,19 @@ std::array<std::string, 4> init_treatement_lguhc(std::array<std::string, 4> &res
         bool role_pris = false;
         while (std::regex_search(str_actual, matches, liste_reg[0]))
         {
-
+            if (matches.ready())
+            {
+                std::cout << "role trouvé : " << matches.str(2);
+                result[1] = matches.str(2);
+                init_camp_lguhc(result[1]);
+                break;
+            }
         }
     }
     return result;
 }
+
+
 
 
 
@@ -37,17 +56,17 @@ data_game main_treatement(log_brut &data_brut)
     std::string str_actual = data_brut.give_line_kill_line();//init de la string de la data_brut
     std::array<std::string, 4> result;//0 = start_game, 1 = role, 2 = winning_camp, 3 = event_game //une manière de stocker temporèrement les données //à changer pour un txt qui se modifie au fur et à mesure
     bool disconnected = false;
-    
+    std::smatch matches;
+
     while (!data_brut.empty() && !disconnected) {
-        auto words_begin = std::sregex_iterator(str_actual.begin(), str_actual.end(), reg_start);
-        auto words_end = std::sregex_iterator();
-        for (std::sregex_iterator i = words_begin; i != words_end; ++i) {
-            std::smatch match = *i;
-            std::cout << "regex iterator\n";
-            if (match.str(2) == "LG UHC") {
-                result[0] = match.str(1);
+        while (std::regex_search(str_actual, matches, reg_start))
+        {
+            if (matches.str(2) == "LG UHC") {
+                result[0] = matches.str(1);
                 //init_treatement_lguhc(result, data_brut, str_actual, disconnected);
+                std::cout << "regex iterator\n";
             }
+            str_actual = matches.suffix().str();   //suprime le résultat trouvé pour npasser aux prochain 
         }
         str_actual = data_brut.give_line_kill_line();
     }
