@@ -8,6 +8,9 @@ log_brut::log_brut(std::string chemin)
         std::cerr << "Erreur : impossible d'ouvrir le fichier des logs." << std::endl;
         return;
     }
+    else {
+        std::cout << "Fichier ouvert avec succès.\n";
+    }
 }
 
 

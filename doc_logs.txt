@@ -1,0 +1,54 @@
+
+start_game : 
+	sample : [17:39:46] [Client thread/INFO]: [CHAT] [UHC] Bienvenue dans cette partie de LG UHC S10.5
+	regex : /\[(\d{2}):(\d{2}):(\d{2})\].*\[CHAT\] \[UHC\] Bienvenue dans cette partie de ([A-Za-z0-9\s\.]+UHC)/
+
+attribution_role : 
+	sample : [17:59:44] [Client thread/INFO]: [CHAT]  • Vous êtes Loup-Garou Blanc
+	regex : 
+
+camp_objectif : 
+	sample : [17:59:44] [Client thread/INFO]: [CHAT]  • Objectif : Vous devez gagner Seul.
+	regex : 
+
+pvp_activé (45min de jeu) : 
+	sample : [18:24:44] [Client thread/INFO]: [CHAT] [UHC] PvP activé !
+	regex : 
+
+event_exposed_inversé : 
+	sample : [18:51:39] [Client thread/INFO]: [CHAT] [LG - EXPOSED ?] Le rôle Loup-Garou Déloyal se trouve parmi les joueurs : Kioua, Nox_Leloup, THeGhost48, LucasNAVI, Vei_1
+	regex : 
+
+event_vote : 
+	vote_sample : [18:51:51] [Client thread/INFO]: [CHAT] [LG UHC] Le joueur Vei_1 est la cible majoritaire des votes avec 5 votes. Il perd donc 2 niveaux d'Honneur !
+	regex : 
+	exposed_vote_sample : [18:51:51] [Client thread/INFO]: [CHAT] [LG - EXPOSED] Le rôle de Vei_1 se trouve parmi les rôles suivants : Lapin   Loup-Garou Déloyal   Loup-Garou Perfide  Soeur
+	regex : 
+
+event_aurore : 
+	sample : [18:54:43] [Client thread/INFO]: [CHAT] [LG - AURORE] La couleur des cieux change et parmi ces lumières, vous distinguez les noms de trois duos qui partagent actuellement la même aura : doudoux1427 et kingdrav1 // Wolfeur24 et Wozac // FlyseCestMoi et mayorie
+	regex : 
+
+mort mumble spec ? :
+	sample : [19:10:11] [Client thread/INFO]: [CHAT] [?] Vous avez été déplacé vers le canal Spectateurs sur Mumble.
+	regex : 
+
+deconnection ??? : 
+	sample : [19:14:34] [Client thread/INFO]: [CHAT] You were kicked from lg-699: Unstable connection
+	regex : 
+
+event_feu_de_camp : 
+	sample : [19:17:52] [Client thread/INFO]: [CHAT] [LG - FEU DE CAMP] Le village décide de discuter de ses suspicions autour d'un feu de camp ; le dernier vote s'y tiendra !
+	regex : 
+
+event_sanctuaires : 
+	sample : [19:19:24] [Client thread/INFO]: [CHAT] [LG UHC] Quatre sanctuaires viennent d'apparaître sur la carte !
+	regex : 
+
+victoire des amoureux : 
+	sample : [19:39:58] [Client thread/INFO]: [CHAT] [LG UHC] Les Amoureux remportent la partie !
+	regex : 
+
+liste des winners : 
+	sample : [19:39:58] [Client thread/INFO]: [CHAT] » Victoire de XxTominhoPGM69xX, RaiitoPGM91 and LumsGOAT69xX avec 10 kill(s) !
+	regex : 

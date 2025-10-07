@@ -1,7 +1,7 @@
-#include "traitement_donnees.h"
+Ôªø#include "traitement_donnees.h"
 
 
-//fait une requete SQL qui rÈcupËre le camp du role selon son role
+//fait une requete SQL qui r√©cup√®re le camp du role selon son role
 std::string init_camp_lguhc(int id_role) {
     sqlite3* db;
     sqlite3_stmt* stmt;
@@ -22,7 +22,7 @@ std::string init_camp_lguhc(int id_role) {
 
     rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur prÈparation requÍte: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "Erreur pr√©paration requ√™te: " << sqlite3_errmsg(db) << std::endl;
         sqlite3_close(db);
         return camp_name;
     }
@@ -49,21 +49,21 @@ std::string init_camp_lguhc(int id_role) {
 
 
 
-//init du traitement lguhc, je trouve le camp et le role de ta game jusqu'‡ 45min, traitant des events suivants : 
+//init du traitement lguhc, je trouve le camp et le role de ta game jusqu'√† 45min, traitant des events suivants : 
 //couple
-//protÈgÈ
-//events selon le role attribuÈ : cupidon, voleur, enfant sauvage, chien-loup, renÈgat, trublion, voleur
-//attribuÈ le camp selon le role sinon
-std::array<std::string, 4> init_treatement_lguhc(data_game &result,log_brut &data_brut, std::string &str_actual, bool disconnected)
+//prot√©g√©
+//events selon le role attribu√© : cupidon, voleur, enfant sauvage, chien-loup, ren√©gat, trublion, voleur
+//attribu√© le camp selon le role sinon
+data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::string &str_actual, bool disconnected)
 {
     std::smatch matches;
 
-    //liste des regex nÈcÈssaires pour l'init des camp et roles seulement
+    //liste des regex n√©c√©ssaires pour l'init des camp et roles seulement
     std::array<std::regex, 1> liste_reg{
-   std::regex(R"(\[(\d{2}:\d{2}:\d{2})\].*?<span style="color: #555;">ï <\/span>.*?<span style="color: #AAA;">Vous Ítes <\/span>.*?<span[^>]*>([^<]+)<\/span>)")
+    std::regex(R"()")
     }; //0 = reg_role
 
-    std::cout << "entrÈ traitement de donnÈe lguhc\n\n";
+    std::cout << "entr√© traitement de donn√©e lguhc\n\n";
     while (!data_brut.empty() && !disconnected)
     {
         bool role_pris = false;
@@ -71,14 +71,14 @@ std::array<std::string, 4> init_treatement_lguhc(data_game &result,log_brut &dat
         {
             if (matches.ready())
             {
-                std::cout << "role trouvÈ : " << matches.str(2);
+                std::cout << "role trouv√© : " << matches.str(2);
                 //trouver un moyen de trouver l'id du role
                 init_camp_lguhc(result.get_id_role());
                 break;
             }
         }
     }
-    return ;
+    return result;
 }
 
 
@@ -90,7 +90,7 @@ data_game main_treatement(log_brut &data_brut)
 {
     //initialisation des variables
     //init pour le regex
-    static std::regex reg_start(R"(\[(\d{2}:\d{2}:\d{2})\].*?Bienvenue dans cette partie de.*?(LG UHC S\d+\.\d+))");//regex pour voir quelle type de game c'est
+    static std::regex reg_start(R"(\[(\d{2}):(\d{2}):(\d{2})\].*\[CHAT\].*\[UHC\].*Bienvenue dans cette partie de (.+?UHC))");
     std::string str_actual = data_brut.give_line_kill_line();//init de la string de la data_brut
     data_game result;
     bool disconnected = false;
@@ -99,12 +99,13 @@ data_game main_treatement(log_brut &data_brut)
     while (!data_brut.empty() && !disconnected) {
         while (std::regex_search(str_actual, matches, reg_start))
         {
-            if (matches.str(2) == "LG UHC") {
+            std::cout << "Inregex, nom de mode de jeu : " << matches.str(4) << "\n";
+            if (matches.str(4) == "LG UHC") {
                 result.set_start_game(matches.str(1));
+                std::cout << "D√©but de game LG UHC trouv√©.\n";
                 //init_treatement_lguhc(result, data_brut, str_actual, disconnected);
-                std::cout << "regex iterator\n";
             }
-            str_actual = matches.suffix().str();   //suprime le rÈsultat trouvÈ pour npasser aux prochain 
+            str_actual = matches.suffix().str();   //suprime le r√©sultat trouv√© pour npasser aux prochain 
         }
         str_actual = data_brut.give_line_kill_line();
     }

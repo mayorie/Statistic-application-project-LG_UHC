@@ -10,7 +10,7 @@
 //protégé
 //events selon le role attribué : cupidon, voleur, enfant sauvage, chien-loup, renégat, trublion, voleur
 //attribué le camp selon le role sinon
-std::array<std::string, 4> init_treatement_lguhc(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
+data_game init_treatement_lguhc(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
 
 std::string init_camp_lguhc(int role);
 

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <ctime>
+#include <vector>
 
 class data_game {
 private:
@@ -9,7 +10,7 @@ private:
         int id_role;
         int id_camp;
         bool win;
-        std::vector<int> event_game;
+        std::vector<int> event_game = {};
     };
     GameEntry entry;
 
@@ -18,12 +19,12 @@ public:
     data_game(std::string& date,
         int& id_role,
         int& id_camp,
-        bool& win,
-        std::vector<int> event_game)
-        : entry{ date, id_role, id_camp, win, event_game } {
+        bool& win)
+        : entry{ date, id_role, id_camp, win} {
     }
     data_game()
-        : entry{ "", -1, -1, false} { }
+        : entry{ "", -1, -1, false,{} } {
+    }
 
     const std::string& get_start_game() const { return entry.start_game; }
     const int& get_id_role() const { return entry.id_role; }
@@ -38,5 +39,4 @@ public:
     void clear_event_game(int event) { entry.event_game.clear(); }
 
     void add_event_game(int& entry_event_game) { entry.event_game.push_back(entry_event_game); }
-
 };
