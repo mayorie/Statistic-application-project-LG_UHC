@@ -123,4 +123,9 @@
     </None>
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="logs\2025-08-23-1.log">
+      <Filter>Fichiers de ressources</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

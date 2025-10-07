@@ -61,7 +61,7 @@ int create_bd_stats() {
         " id_type_event INTEGER PRIMARY KEY AUTOINCREMENT, "
         " id_gameplay INTEGER NOT NULL, "
         " description TEXT NOT NULL"
-        " FOREIGN KEY (id_gameplay) REFERENCES gameplay(id_gameplay) ON DELETE CASCADE ON UPDATE CASCADE, "
+        " FOREIGN KEY (id_gameplay) REFERENCES gameplay(id_gameplay) ON DELETE CASCADE ON UPDATE CASCADE "
         ");"/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //pas fais d'insert
 
