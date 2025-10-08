@@ -2,6 +2,7 @@
 #include "data_game.h"
 #include "recup_donnee_brut.h"
 #include "sqlite3.h"
+#include "creation_bd.h"
 #include <array>
 #include <regex>
 

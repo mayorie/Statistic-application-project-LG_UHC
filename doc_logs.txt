@@ -5,11 +5,11 @@ start_game :
 
 attribution_role : 
 	sample : [17:59:44] [Client thread/INFO]: [CHAT]  • Vous êtes Loup-Garou Blanc
-	regex : 
+	regex : Vous êtes\s+([A-Za-zÀ-ÿ\- ]+)
 
 camp_objectif : 
 	sample : [17:59:44] [Client thread/INFO]: [CHAT]  • Objectif : Vous devez gagner Seul.
-	regex : 
+	regex : Objectif\s*:\s*Vous devez gagner\s+([A-Za-zÀ-ÿ\-]+)
 
 pvp_activé (45min de jeu) : 
 	sample : [18:24:44] [Client thread/INFO]: [CHAT] [UHC] PvP activé !
