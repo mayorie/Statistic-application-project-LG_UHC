@@ -12,12 +12,13 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
     std::smatch matches;
 
     //liste des regex nécéssaires pour l'init des camp et roles seulement
-    std::array<std::regex, 2> liste_reg{
+    std::array<std::regex, 3> liste_reg{
     std::regex (R"(Vous êtes\s+([A-Za-zÀ-ÿ\- ]+))"),
-    std::regex (R"(Objectif\s*:\s*Vous devez gagner\s+([A-Za-zÀ-ÿ\-]+))")
+    std::regex (R"(Objectif\s*:\s*Vous devez gagner\s+([A-Za-zÀ-ÿ\-]+))"),
+    std::regex(R"(azertyuiopmlkjhgfdsqwxcvbn)")
     }; //0 = reg_role
 
-    std::cout << "entré init_treatement_lguhc\n\n";
+    std::cout << "\n\n\n\nentré init_treatement_lguhc\n\n";
     while (!data_brut.empty() && !disconnected)
     {
         bool role_pris = false;
@@ -27,20 +28,47 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
             {
             case 0:
             {
-                std::cout << "role trouvé : " << matches.str(1) << "\n";
-                //result.set_id_role(search_id_role_by_name(matches.str(1)));
+                std::string role_name = matches.str(1);
+                std::cout << "Traitement LGUHC : role trouvé : " << role_name << "\n";
+                try {
+                    int id_role = search_id_role_by_name(role_name); // utilise ta fonction qui retourne -1 si non trouvé
+                    if (id_role == -1) {
+                        throw std::runtime_error("Traitement LGUHC : Le rôle '" + role_name + "' n'existe pas dans la base !\n\n\n");
+                    }
+
+                    std::cout << "Traitement LGUHC : id_role : " << id_role << "\n\n";
+
+                    result.set_id_role(id_role);
+                }
+                catch (const std::exception& e) {
+                    std::cerr << "Erreur : " << e.what() << std::endl;
+                }
+                iterator_regex++;
                 break;
             }
             case 1:
             {
-                std::cout << "camp trouvé : " << matches.str(1) << "\n";
-                //result.set_id_camp(search_id_camp_by_name(matches.str(1)));
+                std::string camp_name = matches.str(1);
+                std::cout << "Traitement LGUHC : camp trouvé : " << camp_name << "\n";
+                try {
+                    int id_camp = search_id_camp_by_name(camp_name); // utilise ta fonction qui retourne -1 si non trouvé
+                    if (id_camp == -1) {
+                        throw std::runtime_error("Traitement LGUHC : Le camp '" + camp_name + "' n'existe pas dans la base !\n\n\n");
+                    }
+
+                    std::cout << "Traitement LGUHC : id_camp : " << id_camp << "\n\n";
+
+                    result.set_id_camp(id_camp);
+                }
+                catch (const std::exception& e) {
+                    std::cerr << "Erreur : " << e.what() << std::endl;
+                }
+                iterator_regex++;
                 break;
             }
             default:
                 return result;
             }
-            iterator_regex++;
             str_actual = matches.suffix().str();   //suprime le résultat trouvé pour npasser aux prochain 
         }
         str_actual = data_brut.give_line_kill_line();

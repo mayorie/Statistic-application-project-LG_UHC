@@ -83,7 +83,7 @@ int create_bd_stats() {
         "INSERT INTO role_camp(name_camp) VALUES"
         "('Village'),"
         "('Loups-Garous'),"
-        "('Solitaire')," //le protégé est une victoire en solo
+        "('Seul')," //le protégé est une victoire en solo
         "('Couple'),"
         "('Special');"
 
@@ -356,4 +356,89 @@ int delete_all_games()
 
     sqlite3_close(db);
     return rc;
+}
+
+int search_id_role_by_name(const std::string& role_name)
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int role_id = -1; // valeur par défaut si non trouvé
+
+    // Ouverture de la base
+    int rc = sqlite3_open("bd_stats.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return -1;
+    }
+
+    const char* sql = "SELECT id_role FROM role WHERE LOWER(name_role) LIKE LOWER(?) LIMIT 1;";
+
+    // Préparation de la requête
+    rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return -1;
+    }
+
+    // Bind du paramètre : le nom du rôle
+    sqlite3_bind_text(stmt, 1, role_name.c_str(), -1, SQLITE_STATIC);
+
+    // Exécution
+    rc = sqlite3_step(stmt);
+    if (rc == SQLITE_ROW) {
+        role_id = sqlite3_column_int(stmt, 0);
+        std::cout << "SQL : Role '" << role_name << "' trouvé avec ID = " << role_id << std::endl;
+    }
+    else {
+        std::cout << "Aucun rôle trouvé pour le nom '" << role_name << "'." << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    return role_id;
+}
+
+
+int search_id_camp_by_name(const std::string& camp_name)
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int camp_id = -1; // valeur par défaut si non trouvé
+
+    // Ouverture de la base
+    int rc = sqlite3_open("bd_stats.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return -1;
+    }
+
+    const char* sql = "SELECT id_camp FROM role_camp WHERE LOWER(name_camp) LIKE LOWER(?) LIMIT 1;";
+
+    // Préparation de la requête
+    rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return -1;
+    }
+
+    // Bind du paramètre : le nom du camp
+    sqlite3_bind_text(stmt, 1, camp_name.c_str(), -1, SQLITE_STATIC);
+
+    // Exécution
+    rc = sqlite3_step(stmt);
+    if (rc == SQLITE_ROW) {
+        camp_id = sqlite3_column_int(stmt, 0);
+        std::cout << "SQL : Camp '" << camp_name << "' trouvé avec ID = " << camp_id << std::endl;
+    }
+    else {
+        std::cout << "Aucun camp trouvé pour le nom '" << camp_name << "'." << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    return camp_id;
 }

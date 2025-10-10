@@ -20,6 +20,6 @@ int select_all_from_table(const std::string& tableName);//"game", "role", "role_
 //suprétion du contenu de la table game et reset des ids
 int delete_all_games();
 
-int search_id_role_by_name(std::string role);
+int search_id_role_by_name(const std::string& role_name);
 
-int search_id_camp_by_name(std::string role);
+int search_id_camp_by_name(const std::string& camp_name);
