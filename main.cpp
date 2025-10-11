@@ -9,7 +9,7 @@
 
 int main() {
 	//récupération des données
-	std::string chemin = "C:/Users/mayorie/Documents/GitHub/Statistic-application-project-LG_UHC/logs/2025-09-06-1.log/2025-09-06-1.log";
+	std::string chemin = "logs/2025-09-06-1.log/2025-09-06-1.log";
 
 	//initialisation
 	// création base de donnée.

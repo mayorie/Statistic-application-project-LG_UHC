@@ -13,7 +13,7 @@ camp_objectif :
 
 pvp_activé (45min de jeu) : 
 	sample : [18:24:44] [Client thread/INFO]: [CHAT] [UHC] PvP activé !
-	regex : 
+	regex : \[\d{2}:\d{2}:\d{2}\] \[Client thread/INFO\]: \[CHAT\] \[UHC\] PvP activé !$
 
 event_exposed_inversé : 
 	sample : [18:51:39] [Client thread/INFO]: [CHAT] [LG - EXPOSED ?] Le rôle Loup-Garou Déloyal se trouve parmi les joueurs : Kioua, Nox_Leloup, THeGhost48, LucasNAVI, Vei_1

@@ -1,5 +1,12 @@
 ﻿#include "traitement_donnees.h"
 
+data_game event_ingame_LGUHC(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected)
+{
+    std::cout << "aaaaaa\n";
+    return result;
+}
+
+
 //init du traitement lguhc, je trouve le camp et le role de ta game jusqu'à 45min, traitant des events suivants : 
 //couple
 //protégé
@@ -15,7 +22,7 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
     std::array<std::regex, 3> liste_reg{
     std::regex (R"(Vous êtes\s+([A-Za-zÀ-ÿ\- ]+))"),
     std::regex (R"(Objectif\s*:\s*Vous devez gagner\s+([A-Za-zÀ-ÿ\-]+))"),
-    std::regex(R"(azertyuiopmlkjhgfdsqwxcvbn)")
+    std::regex(R"(\[\d{2}:\d{2}:\d{2}\] \[Client thread\/INFO\]: \[CHAT\] \[UHC\] PvP activé !$)")
     }; //0 = reg_role
 
     std::cout << "\n\n\n\nentré init_treatement_lguhc\n\n";
@@ -30,18 +37,14 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
             {
                 std::string role_name = matches.str(1);
                 std::cout << "Traitement LGUHC : role trouvé : " << role_name << "\n";
-                try {
-                    int id_role = search_id_role_by_name(role_name); // utilise ta fonction qui retourne -1 si non trouvé
-                    if (id_role == -1) {
-                        throw std::runtime_error("Traitement LGUHC : Le rôle '" + role_name + "' n'existe pas dans la base !\n\n\n");
-                    }
-
-                    std::cout << "Traitement LGUHC : id_role : " << id_role << "\n\n";
-
-                    result.set_id_role(id_role);
+                int id_role = search_id_role_by_name(role_name); // utilise ta fonction qui retourne -1 si non trouvé
+                if (id_role == -1) {
+                    std::cout<<"Traitement LGUHC : Le rôle '" + role_name + "' n'existe pas dans la base !\n\n\n";
                 }
-                catch (const std::exception& e) {
-                    std::cerr << "Erreur : " << e.what() << std::endl;
+                else
+                {
+                    std::cout << "Traitement LGUHC : id_role : " << id_role << "\n\n";
+                    result.set_id_role(id_role);
                 }
                 iterator_regex++;
                 break;
@@ -50,20 +53,22 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
             {
                 std::string camp_name = matches.str(1);
                 std::cout << "Traitement LGUHC : camp trouvé : " << camp_name << "\n";
-                try {
                     int id_camp = search_id_camp_by_name(camp_name); // utilise ta fonction qui retourne -1 si non trouvé
                     if (id_camp == -1) {
-                        throw std::runtime_error("Traitement LGUHC : Le camp '" + camp_name + "' n'existe pas dans la base !\n\n\n");
+                        std::cout<<"Traitement LGUHC : Le camp '" + camp_name + "' n'existe pas dans la base !\n\n\n";
                     }
-
-                    std::cout << "Traitement LGUHC : id_camp : " << id_camp << "\n\n";
-
-                    result.set_id_camp(id_camp);
-                }
-                catch (const std::exception& e) {
-                    std::cerr << "Erreur : " << e.what() << std::endl;
-                }
+                    else
+                    {
+                        std::cout << "Traitement LGUHC : id_camp : " << id_camp << "\n\n";
+                        result.set_id_camp(id_camp);
+                    }
                 iterator_regex++;
+                break;
+            }
+            case 2:
+            {
+                if (std::regex_search(str_actual, matches, liste_reg[2]))
+                    return event_ingame_LGUHC(result, data_brut, str_actual, disconnected);
                 break;
             }
             default:
