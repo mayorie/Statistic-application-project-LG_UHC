@@ -1,16 +1,17 @@
 # LGSTATS_projet_v1
 
-Récupération des logs d'un mod minecraft : chatlog. Pour récupérer le chat des parties du mode de jeu LG UHC.
+RÃ©cupÃ©ration des logs de minecraft vanilla. Pour rÃ©cupÃ©rer le chat et les dÃ©connexion du joueur.
+Pour analyser des parties du mode de jeu LG UHC sur le serveur UHCWORLD.
 
 ## Organistaion du code : 
 
-### Création de la base de donnée : 
+### CrÃ©ation de la base de donnÃ©e : 
 
-Permet de créer, modifier et ajouter des données dans la base de donnée de l'extérieur, de manière sécurisé.
+Permet de crÃ©er, modifier et ajouter des donnÃ©es dans la base de donnÃ©e de l'extÃ©rieur, de maniÃ¨re sÃ©curisÃ©.
 
-### Recup des données brut : 
+### Recup des donnÃ©es brut : 
 
-Créé un fichier ifstream pour naviguer dans le fichier de log choisit.
+CrÃ©Ã© un fichier ifstream pour naviguer dans le fichier de log choisit.
 
 ### Traitement : 
 
@@ -20,4 +21,4 @@ Trouve sur quels mode de jeu on joue.
 
 #### init traitement LGUHC : 
 
-Regarde le rôle du joueur et ses information jusqu'à 45mins de jeu.
+Regarde le rÃ´le du joueur et ses information jusqu'Ã  45mins de jeu.
