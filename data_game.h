@@ -2,6 +2,7 @@
 #include <string>
 #include <ctime>
 #include <vector>
+#include "creation_bd.h" // pour insert_game()
 
 class data_game {
 private:
@@ -23,7 +24,7 @@ public:
         : entry{ date, id_role, id_camp, win} {
     }
     data_game()
-        : entry{ "", -1, -1, false,{} } {
+        : entry{ "", -1, -1, false} {
     }
 
     const std::string& get_start_game() const { return entry.start_game; }
@@ -39,4 +40,21 @@ public:
     void clear_event_game(int event) { entry.event_game.clear(); }
 
     void add_event_game(int& entry_event_game) { entry.event_game.push_back(entry_event_game); }
+
+    bool merge_into_data_base() {
+
+        // Insertion dans la base de données
+        int rc = insert_game(entry.id_role, entry.id_camp, entry.start_game, entry.win);
+
+        // Vérification du succès
+        if (rc == SQLITE_DONE) {
+            std::cout << "[merge_into_data_base] Insertion réussie pour le jeu : "
+                << entry.start_game << std::endl;
+            return true;
+        }
+        else {
+            std::cerr << "[merge_into_data_base] Échec de l'insertion (code SQLite : " << rc << ")" << std::endl;
+            return false;
+        }
+    }
 };

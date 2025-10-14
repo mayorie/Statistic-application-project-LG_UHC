@@ -39,6 +39,9 @@ int main() {
 
 	main_treatement(fichier_log);
 
+	select_all_from_table("game"); //"game", "role", "role_camp", "gameplay"
+
+	delete_all_games();
 
 	return 0;
 }

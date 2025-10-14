@@ -1,4 +1,8 @@
 
+connection à un serveur : 
+	sample : [16:34:04] [Client thread/INFO]: Connecting to mc.uhcworld.fr, 25565
+	regex : 
+
 start_game : 
 	sample : [17:39:46] [Client thread/INFO]: [CHAT] [UHC] Bienvenue dans cette partie de LG UHC S10.5
 	regex : /\[(\d{2}):(\d{2}):(\d{2})\].*\[CHAT\] \[UHC\] Bienvenue dans cette partie de ([A-Za-z0-9\s\.]+UHC)/

@@ -9,7 +9,7 @@
 int create_bd_stats();
 
 //ajoute les datas d'une game dans la table game
-int insert_game(int id_role, int camp, std::string start_game, std::string event_ingame, bool win, std::string comment);
+int insert_game(int id_role, int camp, std::string start_game, bool win);
 
 //suprime l'une des games via l'id dans la table game
 int delete_game(int id_game);
