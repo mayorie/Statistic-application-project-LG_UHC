@@ -5,6 +5,7 @@
 #include "creation_bd.h"
 #include <array>
 #include <regex>
+#include <unordered_map>
 
 //init du traitement lguhc, je trouve le camp et le role de ta game jusqu'à 45min, traitant des events suivants : 
 //couple
