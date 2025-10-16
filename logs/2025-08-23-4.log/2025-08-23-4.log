@@ -1,0 +1,1285 @@
+[17:36:29] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:36:29] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:36:29] [main/INFO]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
+[17:36:29] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_51, running on Windows 10:amd64:10.0, installed at C:\Users\matts\curseforge\minecraft\Install\runtime\jre-legacy\windows-x64\jre-legacy
+[17:36:29] [main/INFO]: Loading tweaker info.varden.chatlog.CLTweaker from ChatLog_V1.jar
+[17:36:29] [main/INFO]: Loading tweaker cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker from EvergreenHUD-1.8.9-forge-2.1.7.jar
+[17:36:29] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:36:29] [main/INFO]: Loading tweak class name info.varden.chatlog.CLTweaker
+[17:36:29] [main/INFO]: Loading tweak class name cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker
+[17:36:29] [main/INFO]: [cc.polyfrost.oneconfig.loader.stage0.OneConfigWrapperBase:addSSLStore:258]: Attempting to load Polyfrost certificate.
+[17:36:29] [main/INFO]: [cc.polyfrost.oneconfig.loader.stage0.OneConfigWrapperBase:<init>:49]: OneConfig has detected the version 1.8.9. If this is false, report this at https://inv.wtf/polyfrost
+[17:36:29] [main/INFO]: [cc.polyfrost.oneconfig.loader.OneConfigWrapperBase:<init>:49]: OneConfig has detected the version 1.8.9. If this is false, report this at https://inv.wtf/polyfrost
+[17:36:29] [main/INFO]: [cc.polyfrost.oneconfig.internal.plugin.asm.OneConfigTweaker:injectMixinTweaker:186]: Injecting MixinTweaker from EssentialSetupTweaker
+[17:36:29] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.7.11 Source=file:/C:/Users/matts/curseforge/minecraft/Instances/test%20chatlog/./OneConfig/OneConfig%20(1.8.9-forge).jar Service=LaunchWrapper Env=CLIENT
+[17:36:29] [main/INFO]: [cc.polyfrost.oneconfig.loader.OneConfigLoaderBase:<init>:44]: OneConfig has detected the version 1.8.9. If this is false, report this at https://inv.wtf/polyfrost
+[17:36:29] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:36:29] [main/DEBUG]: Injecting coremod FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin} class transformers
+[17:36:29] [main/TRACE]: Registering transformer net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[17:36:29] [main/TRACE]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[17:36:29] [main/TRACE]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[17:36:29] [main/TRACE]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[17:36:30] [main/DEBUG]: Injection complete
+[17:36:30] [main/DEBUG]: Running coremod plugin for FMLCorePlugin {net.minecraftforge.fml.relauncher.FMLCorePlugin}
+[17:36:30] [main/DEBUG]: Running coremod plugin FMLCorePlugin
+[17:36:30] [main/DEBUG]: Read 825 binary patches
+[17:36:30] [main/DEBUG]: Loading deobfuscation resource /deobfuscation_data-1.8.9.lzma with 27891 records
+[17:36:30] [main/INFO]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[17:36:30] [main/INFO]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+[17:36:30] [main/DEBUG]: Coremod plugin class FMLCorePlugin run successfully
+[17:36:30] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:36:30] [main/DEBUG]: Injecting coremod FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin} class transformers
+[17:36:30] [main/DEBUG]: Injection complete
+[17:36:30] [main/DEBUG]: Running coremod plugin for FMLForgePlugin {net.minecraftforge.classloading.FMLForgePlugin}
+[17:36:30] [main/DEBUG]: Running coremod plugin FMLForgePlugin
+[17:36:30] [main/DEBUG]: Coremod plugin class FMLForgePlugin run successfully
+[17:36:30] [main/INFO]: Calling tweak class info.varden.chatlog.CLTweaker
+[17:36:30] [main/INFO]: Calling tweak class org.spongepowered.asm.launch.MixinTweaker
+[17:36:30] [main/INFO]: Compatibility level set to JAVA_8
+[17:36:30] [main/INFO]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@705202d1
+[17:36:30] [main/INFO]: Calling tweak class cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker
+[17:36:30] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:36:30] [main/DEBUG]: Loaded 165 rules from AccessTransformer config file forge_at.cfg
+[17:36:30] [main/DEBUG]: Validating minecraft
+[17:36:30] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:36:30] [main/INFO]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[17:36:30] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:36:30] [main/INFO]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[17:36:30] [main/WARN]: Error loading class: Config (java.lang.ClassNotFoundException: The specified class 'Config' was not found)
+[17:36:30] [main/WARN]: Error loading class: net/wyvest/redaction/features/NameHighlight (java.lang.ClassNotFoundException: The specified class 'net.wyvest.redaction.features.NameHighlight' was not found)
+[17:36:30] [main/WARN]: Error loading class: org/polyfrost/redaction/features/NameHighlight (java.lang.ClassNotFoundException: The specified class 'org.polyfrost.redaction.features.NameHighlight' was not found)
+[17:36:30] [main/WARN]: Error loading class: mynameisjeff/skyblockclientupdater/UpdateChecker (java.lang.ClassNotFoundException: The specified class 'mynameisjeff.skyblockclientupdater.UpdateChecker' was not found)
+[17:36:30] [main/WARN]: Error loading class: club/sk1er/mods/levelhead/render/AboveHeadRender (java.lang.ClassNotFoundException: The specified class 'club.sk1er.mods.levelhead.render.AboveHeadRender' was not found)
+[17:36:31] [main/INFO]: Mixing MainMixin from mixins.evergreenhud.json into net.minecraft.client.main.Main
+[17:36:31] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[17:36:31] [main/INFO]: Mixing MinecraftMixin from mixins.oneconfig.json into net.minecraft.client.Minecraft
+[17:36:31] [main/INFO]: Mixing GuiScreenMixin from mixins.oneconfig.json into net.minecraft.client.gui.GuiScreen
+[17:36:31] [main/INFO]: Mixing WorldClientMixin from mixins.oneconfig.json into net.minecraft.client.multiplayer.WorldClient
+[17:36:31] [main/INFO]: Mixing GuiIngameAccessor from mixins.evergreenhud.json into net.minecraft.client.gui.GuiIngame
+[17:36:31] [main/INFO]: Mixing GuiIngameForgeMixin from mixins.oneconfig.json into net.minecraftforge.client.GuiIngameForge
+[17:36:31] [main/INFO]: Mixing EntityPlayerMixin from mixins.evergreenhud.json into net.minecraft.entity.player.EntityPlayer
+[17:36:31] [main/INFO]: Mixing EntityPlayerSPMixin from mixins.oneconfig.json into net.minecraft.client.entity.EntityPlayerSP
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [main/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:31] [Client thread/INFO]: Setting user: mayorie
+[17:36:32] [Client thread/INFO]: Mixing EventBusMixin from mixins.oneconfig.json into net.minecraftforge.fml.common.eventhandler.EventBus
+[17:36:32] [Client thread/INFO]: LWJGL Version: 2.9.4
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:32] [Client thread/WARN]: =============================================================
+[17:36:32] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[17:36:32] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
+[17:36:32] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
+[17:36:32] [Client thread/WARN]: =============================================================
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/INFO]: [net.minecraftforge.fml.client.SplashProgress:start:246]: ---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+Contact their authors BEFORE contacting forge
+
+// Why did you do that?
+
+Time: 8/23/25 5:36 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 353542560 bytes (337 MB) / 739770368 bytes (705 MB) up to 14913372160 bytes (14222 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx16000m -Xms256m
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 577.00' Renderer: 'NVIDIA GeForce RTX 4070 Ti SUPER/PCIe/SSE2'
+[17:36:32] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/INFO]: MinecraftForge v11.15.1.2318 Initialized
+[17:36:32] [Client thread/INFO]: Replaced 229 ore recipies
+[17:36:32] [Thread-8/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Thread-8/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Thread-8/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:32] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[17:36:32] [Client thread/INFO]: Searching C:\Users\matts\curseforge\minecraft\Instances\test chatlog\mods for mods
+[17:36:33] [Client thread/WARN]: Mod MumbleLink is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.8.9-4.1.4
+[17:36:33] [Client thread/WARN]: Mod ExtendedPASupport is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.0.0
+[17:36:33] [Client thread/INFO]: Forge Mod Loader has identified 7 mods to load
+[17:36:34] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, oneconfig, evergreenhud, MumbleLink, ExtendedPASupport] at CLIENT
+[17:36:34] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, oneconfig, evergreenhud, MumbleLink, ExtendedPASupport] at SERVER
+[17:36:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:OneConfig, FMLFileResourcePack:EvergreenHUD, FMLFileResourcePack:MumbleLink for Forge, FMLFileResourcePack:ExtendedPASupport for MumbleLink, ! §cRose Revamp §7[32x].zip
+[17:36:34] [Client thread/INFO]: Processing ObjectHolder annotations
+[17:36:34] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[17:36:34] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[17:36:34] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[17:36:34] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[17:36:34] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[17:36:34] [Client thread/INFO]: Applying holder lookups
+[17:36:34] [Client thread/INFO]: Holder lookups applied
+[17:36:34] [Client thread/INFO]: Injecting itemstacks
+[17:36:34] [Client thread/INFO]: Itemstack injection complete
+[17:36:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:36:34] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[17:36:34] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[17:36:34] [Thread-10/INFO]: OpenAL initialized.
+[17:36:35] [Sound Library Loader/INFO]: Sound engine started
+[17:36:35] [Client thread/INFO]: Max texture size: 16384
+[17:36:35] [Client thread/INFO]: Created: 16x16 textures-atlas
+[17:36:35] [Client thread/INFO]: Mixing RendererLivingEntityMixin from mixins.evergreenhud.json into net.minecraft.client.renderer.entity.RendererLivingEntity
+[17:36:35] [Client thread/INFO]: Mixing EntityRendererMixin from mixins.oneconfig.json into net.minecraft.client.renderer.EntityRenderer
+[17:36:35] [Client thread/INFO]: Mixing HUDUtilsMixin from mixins.evergreenhud.json into cc.polyfrost.oneconfig.hud.HUDUtils
+[17:36:35] [Client thread/INFO]: Loading library 'LinkAPI' from: C:\Users\matts\AppData\Local\Temp\MumbleLink273714438714765829native
+[17:36:35] [Client thread/INFO]: Injecting itemstacks
+[17:36:35] [Client thread/INFO]: Itemstack injection complete
+[17:36:35] [Client thread/INFO]: Forge Mod Loader has successfully loaded 7 mods
+[17:36:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:OneConfig, FMLFileResourcePack:EvergreenHUD, FMLFileResourcePack:MumbleLink for Forge, FMLFileResourcePack:ExtendedPASupport for MumbleLink, ! §cRose Revamp §7[32x].zip
+[17:36:35] [Client thread/INFO]: SoundSystem shutting down...
+[17:36:36] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:36:36] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:36:36] [Thread-14/INFO]: Initializing LWJGL OpenAL
+[17:36:36] [Thread-14/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:36:36] [Thread-14/INFO]: OpenAL initialized.
+[17:36:36] [Client thread/INFO]: Max texture size: 16384
+[17:36:36] [Sound Library Loader/INFO]: Sound engine started
+[17:36:36] [Client thread/INFO]: Created: 1024x1024 textures-atlas
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Transformer called for class avt
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Initialized. Now looking through methods...
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Found method a(Leu;I)V
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Found a return in above method, creating instruction list
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Injecting instructions into method...
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Instructions successfully injected!
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Preparing class writer...
+[17:36:37] [Client thread/INFO]: [ChatLog/TWK]Returning modified class to the game tweaker
+[17:36:37] [Client thread/INFO]: Mixing ShaderGroupAccessor from mixins.oneconfig.json into net.minecraft.client.shader.ShaderGroup
+[17:36:37] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:37] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:37] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:45] [Server Pinger #0/INFO]: Mixing NetworkManagerMixin from mixins.oneconfig.json into net.minecraft.network.NetworkManager
+[17:36:46] [Netty Client IO #0/INFO]: Attempting connection with missing mods [mcp, FML, Forge, oneconfig, evergreenhud, MumbleLink, ExtendedPASupport] at SERVER
+[17:36:46] [Client thread/INFO]: Connecting to mc.uhcworld.fr, 25565
+[17:36:47] [Netty Client IO #1/INFO]: Unexpected packet during modded negotiation - assuming vanilla or keepalives : net.minecraft.network.play.server.S47PacketPlayerListHeaderFooter
+[17:36:47] [Netty Client IO #1/INFO]: Aborting client handshake "VANILLA"
+[17:36:47] [Netty Client IO #1/INFO]: [Netty Client IO #1] Client side vanilla connection established
+[17:36:48] [Client thread/INFO]: [CHAT] ? ? Il est encore temps de vous reconnecter à votre précédente partie !
+[SE RECONNECTER]
+[17:36:48] [Client thread/INFO]: [ChatLog/TWK]Initializing ChatLog...
+[17:36:48] [Client thread/INFO]: [ChatLog/TWK]Initializing themes...
+[17:36:48] [Client thread/INFO]: [ChatLog/TWK]Themes initialized.
+[17:36:48] [Client thread/INFO]: [ChatLog/TWK]Reading configuration file...
+[17:36:48] [Client thread/INFO]: [ChatLog/TWK]Initialized.
+[17:36:48] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:36:48] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:36:48] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:36:48] [Client thread/INFO]: Mixing ForgeHooksMixin from mixins.evergreenhud.json into net.minecraftforge.common.ForgeHooks
+[17:36:48] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:36:51] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure
+[17:36:53] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:36:53] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:36:53] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.input, but that path is defined and not secure
+[17:36:56] [Client thread/INFO]: [CHAT] [?] Une demande pour rejoindre la partie a été envoyée. Vous y serez téléporté si jamais l'host accepte votre demande !
+[17:37:02] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:02] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:03] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:03] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:06] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:06] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:09] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:09] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:09] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:09] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:15] [Client thread/INFO]: [CHAT] [?] Vous avez déjà une demande en attente pour cette partie, veuillez patienter.
+[17:37:19] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:19] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:22] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:22] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:22] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:22] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:26] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:26] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.IllegalArgumentException: A team with the name 'citizen_team' already exists!
+	at net.minecraft.scoreboard.Scoreboard.func_96527_f(SourceFile:218) ~[auo.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147247_a(NetHandlerPlayClient.java:1773) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:113) ~[hr.class:?]
+	at net.minecraft.network.play.server.S3EPacketTeams.func_148833_a(SourceFile:13) ~[hr.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:29] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148944_c(SourceFile:80) ~[fp.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147237_a(NetHandlerPlayClient.java:501) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:75) ~[fp.class:?]
+	at net.minecraft.network.play.server.S0CPacketSpawnPlayer.func_148833_a(SourceFile:16) ~[fp.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:47] [Client thread/INFO]: [CHAT] [»] mayorie (29/30)
+[17:37:47] [Client thread/INFO]: [CHAT] 
+[17:37:47] [Client thread/INFO]: [CHAT] [UHC] MINAGE
+[17:37:47] [Client thread/INFO]: [CHAT] [UHC] Partie organisée par tntbb.
+[17:37:47] [Client thread/INFO]: [CHAT] [UHC] Les scénarios activés sont : CutClean, HasteyBoys, OreMagnet, SafeMiners, TimberPVP, Loup-Garou UHC.
+[17:37:47] [Client thread/INFO]: [CHAT] 
+[17:37:47] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:47] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:47] [Client thread/INFO]: [CHAT] §8[§e§lUHC§8]§f §fVous venez de rejoindre une partie utilisant §a§lUHC Link §f!
+ §fRejoignez ainsi les autres joueurs de la partie dans le chat vocal via la commande §3/mb§f.
+[Générer un lien unique]
+[17:37:49] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[17:37:50] [Client thread/INFO]: [CHAT] [»] Wecylix (30/30)
+[17:37:50] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:37:59] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[17:38:04] [Client thread/INFO]: [CHAT] 
+[17:38:04] [Client thread/INFO]: [CHAT]  HOST tntbb » si vous quittez au lancement, je vous fume
+[17:38:04] [Client thread/INFO]: [CHAT]  
+[17:38:07] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:09] [Client thread/INFO]: [CHAT] [«] Wecylix (29/30)
+[17:38:09] [Client thread/INFO]: [CHAT] [CONFIG] Le démarrage de la partie a été annulé.
+[17:38:09] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:10] [Client thread/INFO]: [CHAT] [»] Wecylix (30/30)
+[17:38:11] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:11] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:11] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[17:38:11] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:15] [Client thread/INFO]: [CHAT] LixDu333 » alors lui
+[17:38:16] [Client thread/INFO]: [CHAT] tropblatant » MDRRRRRR
+[17:38:16] [Client thread/INFO]: [CHAT] §8[§3?§8] §aVous §apouvez §arejoindre §ale §aserveur §aMumble §ade §acette §apartie §aen §acliquant §asur §ace §amessage.
+[17:38:16] [Client thread/INFO]: [CHAT] Wecylix » ct pour la blague xD
+[17:38:20] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[17:38:24] [Client thread/INFO]: [CHAT] tropblatant » on valide
+[17:38:27] [Client thread/INFO]: [CHAT] tropblatant » relance
+[17:38:31] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[17:38:35] [Client thread/INFO]: [CHAT] 
+[17:38:35] [Client thread/INFO]: [CHAT]  HOST tntbb » toi tu vas prendre ta mlg de 50 blocs
+[17:38:35] [Client thread/INFO]: [CHAT]  
+[17:38:36] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:36] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:41] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[17:38:41] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:41] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:45) [g.class:?]
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1014) [ave.class:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:349) [ave.class:?]
+	at net.minecraft.client.main.Main.main(SourceFile:124) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_149027_c(SourceFile:114) ~[fn.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.func_147281_a(NetHandlerPlayClient.java:840) ~[bcy.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:109) ~[fn.class:?]
+	at net.minecraft.network.play.server.S0FPacketSpawnMob.func_148833_a(SourceFile:15) ~[fn.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(SourceFile:13) ~[fh$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_51]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_51]
+	at net.minecraft.util.Util.func_181617_a(SourceFile:44) ~[g.class:?]
+	... 9 more
+[17:38:46] [Client thread/INFO]: [CHAT] Wecylix » osef
+[17:38:48] [Client thread/INFO]: [CHAT] Alex_943_lq » gl all
+[17:38:48] [Client thread/INFO]: [CHAT] Wecylix » za
+[17:38:49] [Client thread/INFO]: [CHAT] Firestromp_ » gl
+[17:38:51] [Client thread/INFO]: [CHAT] Wecylix » ez
+[17:38:52] [Client thread/INFO]: [CHAT] [?] Vous venez de vous connecter au Mumble.
+[17:38:55] [Client thread/INFO]: [CHAT] [UHC] Bienvenue dans cette partie de LG UHC S10.5  
+[17:38:55] [Client thread/INFO]: [CHAT] [UHC] Bonne chance à tout le monde !
+[17:38:55] [Client thread/INFO]: [CHAT] [UHC] Scénarios : CutClean, HasteyBoys, OreMagnet, SafeMiners, TimberPVP, Loup-Garou UHC
+[17:38:56] [Client thread/INFO]: [CHAT]  Faites /rules pour avoir toutes les informations.
+[17:38:56] [Client thread/INFO]: [CHAT]  S'il y a une question, vous pouvez faire /helpop !
+[17:38:56] [Thread-12/INFO]: [CHAT] Mumble linked.
+[17:38:57] [Client thread/INFO]: [CHAT] [UHC] Bonne chance à tous !
+[17:39:53] [Client thread/INFO]: [CHAT] [UHC] Fin de l'invincibilité !
+[17:41:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:OneConfig, FMLFileResourcePack:EvergreenHUD, FMLFileResourcePack:MumbleLink for Forge, FMLFileResourcePack:ExtendedPASupport for MumbleLink, ! §cRose Revamp §7[32x].zip, Fullbright 1.8 (1).zip
+[17:41:06] [Client thread/INFO]: SoundSystem shutting down...
+[17:41:06] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:41:06] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:41:07] [Thread-19/INFO]: Initializing LWJGL OpenAL
+[17:41:07] [Thread-19/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:41:07] [Thread-19/INFO]: OpenAL initialized.
+[17:41:07] [Client thread/INFO]: Max texture size: 16384
+[17:41:07] [Sound Library Loader/INFO]: Sound engine started
+[17:41:07] [Client thread/INFO]: Created: 1024x1024 textures-atlas
+[17:41:47] [Client thread/INFO]: Applying holder lookups
+[17:41:47] [Client thread/INFO]: Holder lookups applied
+[17:41:47] [Netty Client IO #2/INFO]: Attempting connection with missing mods [mcp, FML, Forge, oneconfig, evergreenhud, MumbleLink, ExtendedPASupport] at SERVER
+[17:41:51] [Client thread/INFO]: Stopping!
+[17:41:51] [Client thread/INFO]: SoundSystem shutting down...
+[17:41:51] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:41:51] [Client thread/ERROR]: The jar file C:\Users\matts\curseforge\minecraft\Install\libraries\org\lwjgl\lwjgl\lwjgl\2.9.4-nightly-20150209\lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.opengl, but that path is defined and not secure

@@ -1,11 +1,11 @@
 ﻿#include "creation_bd.h"
 
-int create_stats_lguhc() {
+int create_bd_stats() {
     sqlite3* db;
     char* errMsg = nullptr;
 
     // Créer la base de données
-    int rc = sqlite3_open("stats_lguhc.db", &db);
+    int rc = sqlite3_open("bd_stats.db", &db);
     if (rc) {
         std::cerr << "Impossible d'ouvrir/creer la base: " << sqlite3_errmsg(db) << std::endl;
         return rc;
@@ -42,30 +42,46 @@ int create_stats_lguhc() {
         " FOREIGN KEY (id_gameplay) REFERENCES gameplay(id_gameplay) ON DELETE CASCADE ON UPDATE CASCADE, "
         " FOREIGN KEY (id_camp) REFERENCES role_camp(id_camp) ON DELETE CASCADE ON UPDATE CASCADE"
         ");"
-        
+
         // Table game
         "CREATE TABLE IF NOT EXISTS game ("
         " id_game INTEGER PRIMARY KEY AUTOINCREMENT, "
         " id_role INTEGER NOT NULL, "
-        " camp INTEGER NOT NULL, "
+        " id_camp INTEGER NOT NULL, "
         " start_game TEXT, "
-        " event_ingame TEXT, "
         " win bool, "
-        " comment TEXT, "
         " FOREIGN KEY (id_role) REFERENCES role(id_role) ON DELETE CASCADE ON UPDATE CASCADE, "
-        " FOREIGN KEY (camp) REFERENCES role_camp(id_camp) ON DELETE CASCADE ON UPDATE CASCADE"
+        " FOREIGN KEY (id_camp) REFERENCES role_camp(id_camp) ON DELETE CASCADE ON UPDATE CASCADE"
         ");"
-        
+
+        // Table type_event
+        "CREATE TABLE IF NOT EXISTS type_event ("
+        " id_type_event INTEGER PRIMARY KEY AUTOINCREMENT, "
+        " id_gameplay INTEGER NOT NULL, "
+        " description TEXT NOT NULL,"
+        " FOREIGN KEY (id_gameplay) REFERENCES gameplay(id_gameplay) ON DELETE CASCADE ON UPDATE CASCADE "
+        ");"/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //pas fais d'insert
+
+        //Table event
+        " CREATE TABLE IF NOT EXISTS event ("
+        " id_type_event INTEGER NOT NULL, "
+        " id_game INTEGER NOT NULL,"
+        " date TEXT,"
+        " FOREIGN KEY (id_type_event) REFERENCES type_event(id_type_event) ON DELETE CASCADE ON UPDATE CASCADE, "
+        " FOREIGN KEY (id_game) REFERENCES game(id_game) ON DELETE CASCADE ON UPDATE CASCADE "
+        ");"
+
         // insertion : 
         // insert gamemode
         "INSERT INTO gameplay(name_gameplay) VALUES"
         "('LG UHC');"
-        
+
         // insert role_camp
         "INSERT INTO role_camp(name_camp) VALUES"
         "('Village'),"
         "('Loups-Garous'),"
-        "('Solitaire')," //le protégé est une victoire en solo
+        "('Seul')," //le protégé est une victoire en solo
         "('Couple'),"
         "('Special');"
 
@@ -159,19 +175,19 @@ int create_stats_lguhc() {
 
 
 
-int insert_game(int id_role, int camp, std::string start_game, std::string event_ingame, bool win, std::string comment)
+int insert_game(int id_role, int id_camp, std::string start_game, bool win)
 {
     sqlite3* db;
     sqlite3_stmt* stmt;
-    int rc = sqlite3_open("stats_lguhc.db", &db);
+    int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
         std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
         return rc;
     }
 
     const char* sqlInsert =
-        "INSERT INTO game (id_role, camp, start_game, event_ingame, win, comment) "
-        "VALUES (?, ?, ?, ?, ?, ?);";
+        "INSERT INTO game (id_role, id_camp, start_game, win) "
+        "VALUES (?, ?, ?, ?);";
 
     rc = sqlite3_prepare_v2(db, sqlInsert, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
@@ -182,11 +198,9 @@ int insert_game(int id_role, int camp, std::string start_game, std::string event
 
     // Bind des paramètres
     sqlite3_bind_int(stmt, 1, id_role);
-    sqlite3_bind_int(stmt, 2, camp);
+    sqlite3_bind_int(stmt, 2, id_camp);
     sqlite3_bind_text(stmt, 3, start_game.c_str(), -1, SQLITE_STATIC);
-    sqlite3_bind_text(stmt, 4, event_ingame.c_str(), -1, SQLITE_STATIC);
-    sqlite3_bind_int(stmt, 5, win ? 1 : 0); // bool → int
-    sqlite3_bind_text(stmt, 6, comment.c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_int(stmt, 4, win ? 1 : 0); // bool → int
 
     // Exécution
     rc = sqlite3_step(stmt);
@@ -206,7 +220,7 @@ int delete_game(int id_game)
 {
     sqlite3* db;
     sqlite3_stmt* stmt;
-    int rc = sqlite3_open("stats_lguhc.db", &db);
+    int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
         std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
         return rc;
@@ -251,9 +265,9 @@ int select_all_from_table(const std::string& tableName)
     // Vérification de la table choisie
     bool valid = false;
     for (auto& t : allowed) {
-        if (tableName == t) 
+        if (tableName == t)
         {
-            valid = true; 
+            valid = true;
             break;
         }
     }
@@ -263,7 +277,7 @@ int select_all_from_table(const std::string& tableName)
     }
 
     // Ouverture de la base
-    int rc = sqlite3_open("stats_lguhc.db", &db);
+    int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
         std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
         return rc;
@@ -303,4 +317,124 @@ int select_all_from_table(const std::string& tableName)
     sqlite3_finalize(stmt);
     sqlite3_close(db);
     return SQLITE_OK;
+}
+
+
+int delete_all_games()
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int rc = sqlite3_open("bd_stats.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return rc;
+    }
+
+    const char* sqlDelete = "DELETE FROM game;"
+        "DELETE FROM sqlite_sequence WHERE name='game';";
+
+    rc = sqlite3_prepare_v2(db, sqlDelete, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return rc;
+    }
+
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Erreur suppression de toutes les games: " << sqlite3_errmsg(db) << std::endl;
+    }
+    else {
+        std::cout << "Toutes les games ont été supprimées avec succès !" << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+
+    sqlite3_close(db);
+    return rc;
+}
+
+int search_id_role_by_name(const std::string& role_name)
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int role_id = -1; // valeur par défaut si non trouvé
+
+    // Ouverture de la base
+    int rc = sqlite3_open("bd_stats.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return -1;
+    }
+
+    const char* sql = "SELECT id_role FROM role WHERE LOWER(name_role) LIKE LOWER(?) LIMIT 1;";
+
+    // Préparation de la requête
+    rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return -1;
+    }
+
+    // Bind du paramètre : le nom du rôle
+    sqlite3_bind_text(stmt, 1, role_name.c_str(), -1, SQLITE_STATIC);
+
+    // Exécution
+    rc = sqlite3_step(stmt);
+    if (rc == SQLITE_ROW) {
+        role_id = sqlite3_column_int(stmt, 0);
+        std::cout << "SQL : Role '" << role_name << "' trouvé avec ID = " << role_id << std::endl;
+    }
+    else {
+        std::cout << "Aucun rôle trouvé pour le nom '" << role_name << "'." << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    return role_id;
+}
+
+
+int search_id_camp_by_name(const std::string& camp_name)
+{
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    int camp_id = -1; // valeur par défaut si non trouvé
+
+    // Ouverture de la base
+    int rc = sqlite3_open("bd_stats.db", &db);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        return -1;
+    }
+
+    const char* sql = "SELECT id_camp FROM role_camp WHERE LOWER(name_camp) LIKE LOWER(?) LIMIT 1;";
+
+    // Préparation de la requête
+    rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return -1;
+    }
+
+    // Bind du paramètre : le nom du camp
+    sqlite3_bind_text(stmt, 1, camp_name.c_str(), -1, SQLITE_STATIC);
+
+    // Exécution
+    rc = sqlite3_step(stmt);
+    if (rc == SQLITE_ROW) {
+        camp_id = sqlite3_column_int(stmt, 0);
+        std::cout << "SQL : Camp '" << camp_name << "' trouvé avec ID = " << camp_id << std::endl;
+    }
+    else {
+        std::cout << "Aucun camp trouvé pour le nom '" << camp_name << "'." << std::endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    return camp_id;
 }

@@ -8,6 +8,9 @@ log_brut::log_brut(std::string chemin)
         std::cerr << "Erreur : impossible d'ouvrir le fichier des logs." << std::endl;
         return;
     }
+    else {
+        std::cout << "Fichier ouvert avec succès.\n";
+    }
 }
 
 
@@ -49,20 +52,27 @@ std::string log_brut::give_line_kill_line() {
 }
 
 bool log_brut::empty() {
-    if (!fs_log_brut) return true; // fichier pas ouvert ou invalide
+    if (!fs_log_brut.is_open()) return true;
 
-    // Sauvegarder la position actuelle
+    // Sauvegarde la position actuelle
     std::streampos current_pos = fs_log_brut.tellg();
 
-    // Aller à la fin pour voir si on y est déjà
-    fs_log_brut.seekg(0, std::ios::end);
-    bool is_empty = (fs_log_brut.tellg() == 0);
+    if (current_pos == -1) {
+        // Le flux est peut-être en EOF ou invalide
+        fs_log_brut.clear(); // réinitialise les flags
+        return true;
+    }
 
-    // Revenir à la position initiale
+    // Vérifie si on est à la fin du fichier
+    fs_log_brut.seekg(0, std::ios::end);
+    std::streampos end_pos = fs_log_brut.tellg();
+
+    // Reviens à la position initiale
     fs_log_brut.seekg(current_pos);
 
-    return is_empty;
+    return current_pos >= end_pos;
 }
+
 
 
 

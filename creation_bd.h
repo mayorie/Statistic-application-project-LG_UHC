@@ -6,13 +6,20 @@
 
 
 //initialise la base de donnée
-int create_stats_lguhc();
+int create_bd_stats();
 
 //ajoute les datas d'une game dans la table game
-int insert_game(int id_role, int camp, std::string start_game, std::string event_ingame, bool win, std::string comment);
+int insert_game(int id_role, int camp, std::string start_game, bool win);
 
 //suprime l'une des games via l'id dans la table game
 int delete_game(int id_game);
 
 //permet de selct et d'afficher toutes les données d'une table
 int select_all_from_table(const std::string& tableName);//"game", "role", "role_camp", "gameplay"
+
+//suprétion du contenu de la table game et reset des ids
+int delete_all_games();
+
+int search_id_role_by_name(const std::string& role_name);
+
+int search_id_camp_by_name(const std::string& camp_name);

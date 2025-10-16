@@ -1,0 +1,152 @@
+[17:20:59] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:21:00] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:21:00] [main/INFO]: Forge Mod Loader version 11.15.1.2318 for Minecraft 1.8.9 loading
+[17:21:00] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_51, running on Windows 10:amd64:10.0, installed at C:\Users\matts\curseforge\minecraft\Install\runtime\jre-legacy\windows-x64\jre-legacy
+[17:21:00] [main/INFO]: Loading tweaker info.varden.chatlog.CLTweaker from ChatLog_V1.jar
+[17:21:00] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:21:00] [main/INFO]: Loading tweak class name info.varden.chatlog.CLTweaker
+[17:21:00] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:21:00] [main/INFO]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[17:21:00] [main/INFO]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:21:00] [main/INFO]: Calling tweak class info.varden.chatlog.CLTweaker
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:21:00] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:21:00] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:21:00] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[17:21:01] [Client thread/INFO]: Setting user: mayorie
+[17:21:01] [Client thread/INFO]: LWJGL Version: 2.9.4
+[17:21:02] [Client thread/WARN]: =============================================================
+[17:21:02] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[17:21:02] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
+[17:21:02] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
+[17:21:02] [Client thread/WARN]: =============================================================
+[17:21:02] [Client thread/INFO]: Could not load splash.properties, will create a default one
+[17:21:02] [Client thread/INFO]: [net.minecraftforge.fml.client.SplashProgress:start:246]: ---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+Contact their authors BEFORE contacting forge
+
+// Don't do that.
+
+Time: 8/23/25 5:21 PM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 487634536 bytes (465 MB) / 760741888 bytes (725 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4096m -Xms256m
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 577.00' Renderer: 'NVIDIA GeForce RTX 4070 Ti SUPER/PCIe/SSE2'
+[17:21:02] [Client thread/INFO]: MinecraftForge v11.15.1.2318 Initialized
+[17:21:02] [Client thread/INFO]: Replaced 229 ore recipies
+[17:21:02] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[17:21:02] [Client thread/INFO]: Searching C:\Users\matts\curseforge\minecraft\Instances\test chatlog\mods for mods
+[17:21:02] [Client thread/INFO]: Forge Mod Loader has identified 3 mods to load
+[17:21:03] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge] at CLIENT
+[17:21:03] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge] at SERVER
+[17:21:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+[17:21:03] [Client thread/INFO]: Processing ObjectHolder annotations
+[17:21:03] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[17:21:03] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[17:21:03] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[17:21:03] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[17:21:03] [Client thread/INFO]: Applying holder lookups
+[17:21:03] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[17:21:03] [Client thread/INFO]: Holder lookups applied
+[17:21:03] [Client thread/INFO]: Injecting itemstacks
+[17:21:03] [Client thread/INFO]: Itemstack injection complete
+[17:21:03] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:21:03] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[17:21:03] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:21:03] [Thread-8/INFO]: OpenAL initialized.
+[17:21:03] [Client thread/INFO]: Max texture size: 16384
+[17:21:03] [Client thread/INFO]: Created: 16x16 textures-atlas
+[17:21:03] [Sound Library Loader/INFO]: Sound engine started
+[17:21:04] [Client thread/INFO]: Injecting itemstacks
+[17:21:04] [Client thread/INFO]: Itemstack injection complete
+[17:21:04] [Client thread/INFO]: Forge Mod Loader has successfully loaded 3 mods
+[17:21:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+[17:21:04] [Client thread/INFO]: SoundSystem shutting down...
+[17:21:04] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:21:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:21:04] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[17:21:04] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:21:04] [Thread-10/INFO]: OpenAL initialized.
+[17:21:04] [Client thread/INFO]: Max texture size: 16384
+[17:21:04] [Client thread/INFO]: Created: 512x512 textures-atlas
+[17:21:05] [Sound Library Loader/INFO]: Sound engine started
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Transformer called for class avt
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Initialized. Now looking through methods...
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Found method a(Leu;I)V
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Found a return in above method, creating instruction list
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Injecting instructions into method...
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Instructions successfully injected!
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Preparing class writer...
+[17:21:05] [Client thread/INFO]: [ChatLog/TWK]Returning modified class to the game tweaker
+[17:21:16] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[17:21:16] [Server thread/INFO]: Generating keypair
+[17:21:16] [Server thread/INFO]: Converting map!
+[17:21:16] [Server thread/INFO]: Scanning folders...
+[17:21:16] [Server thread/INFO]: Total conversion count is 0
+[17:21:16] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[17:21:16] [Server thread/INFO]: Applying holder lookups
+[17:21:16] [Server thread/INFO]: Holder lookups applied
+[17:21:16] [Server thread/INFO]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@6529ce1c)
+[17:21:16] [Server thread/INFO]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@6529ce1c)
+[17:21:16] [Server thread/INFO]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@6529ce1c)
+[17:21:16] [Server thread/INFO]: Preparing start region for level 0
+[17:21:17] [Server thread/INFO]: Preparing spawn area: 30%
+[17:21:18] [Server thread/INFO]: Preparing spawn area: 74%
+[17:21:19] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:21:19] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[17:21:19] [Netty Server IO #1/INFO]: Client protocol version 2
+[17:21:19] [Netty Server IO #1/INFO]: Client attempting to join with 3 mods : FML@8.0.99.99,Forge@11.15.1.2318,mcp@9.19
+[17:21:19] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[17:21:19] [Server thread/INFO]: [Server thread] Server side modded connection established
+[17:21:19] [Server thread/INFO]: mayorie[local:E:46cf3947] logged in with entity id 331 at (174.5, 81.0, 248.5)
+[17:21:19] [Server thread/INFO]: mayorie joined the game
+[17:21:24] [Server thread/INFO]: <mayorie> aaaaaaaaaaaaa
+[17:21:24] [Client thread/INFO]: [CHAT] <mayorie> aaaaaaaaaaaaa
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Initializing ChatLog...
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Initializing themes...
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Themes initialized.
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Configuration file not found, generating a new one...
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Generating configuration file...
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Configuration file successfully generated.
+[17:21:24] [Client thread/INFO]: [ChatLog/TWK]Initialized.
+[17:21:26] [Server thread/INFO]: Saving and pausing game...
+[17:21:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:21:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:21:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:21:26] [Server thread/INFO]: Stopping server
+[17:21:26] [Server thread/INFO]: Saving players
+[17:21:26] [Server thread/INFO]: Saving worlds
+[17:21:26] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:21:26] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:21:26] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:21:27] [Server thread/INFO]: Unloading dimension 0
+[17:21:27] [Server thread/INFO]: Unloading dimension -1
+[17:21:27] [Server thread/INFO]: Unloading dimension 1
+[17:21:27] [Server thread/INFO]: Applying holder lookups
+[17:21:27] [Server thread/INFO]: Holder lookups applied
+[17:21:28] [Client thread/INFO]: Stopping!
+[17:21:28] [Client thread/INFO]: SoundSystem shutting down...
+[17:21:28] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:21:28] [Thread-14/INFO]: [ChatLog/TWK]Successfully closed chat log file.
