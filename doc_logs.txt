@@ -1,6 +1,7 @@
 
-connection à un serveur : 
-	sample : [16:34:04] [Client thread/INFO]: Connecting to mc.uhcworld.fr, 25565
+pour vérif quelle version on est est si c pas la bonne supr le fichier : 
+	sample : Minecraft Version: 1.8.9
+
 	regex : 
 
 start_game : 
