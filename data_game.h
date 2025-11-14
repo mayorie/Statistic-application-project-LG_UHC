@@ -19,7 +19,7 @@ public:
 
     data_game(std::string& date,
         int& id_role,
-        int& id_camp,
+        int& id_camp, //1 : villageois, 2 : loup-garous, 3 : solos, 4 : couple, 5 : protégé, villageois, 6 : protégé, loups, 7 : protégé, solo
         bool& win)
         : entry{ date, id_role, id_camp, win} {
     }

@@ -9,14 +9,12 @@ data_game event_ingame_LGUHC(data_game& result, log_brut& data_brut, std::string
         {"Un Solitaire", 3},
         {"Les Amoureux", 4}
     };
-
     std::smatch matches;
-    std::string remaining = str_actual;
     while (!data_brut.empty() && !disconnected)
     {
-        while (std::regex_search(remaining, matches, reg_vainqueur))
+        if(std::regex_search(str_actual, matches, reg_vainqueur))
         {
-            const std::string& gagnant = matches[1];
+            const std::string& gagnant = matches.str(1);
             std::cout << "Traitement LGUHC : vainqueur : " << gagnant << '\n';
 
             auto it = camps.find(gagnant);
@@ -30,7 +28,7 @@ data_game event_ingame_LGUHC(data_game& result, log_brut& data_brut, std::string
                 std::cout << "Traitement LGUHC : tu es nul, tu as perdu.\n";
             }
 
-            remaining = matches.suffix().str();
+            str_actual = matches.suffix().str();
             return result;
 
         }
@@ -56,14 +54,20 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
         REG_ROLE,   // Vous êtes ...
         REG_CAMP,   // Objectif : Vous devez gagner ...
         REG_45MIN,  // PvP activé !
+        REG_TRUBLIONNAGE,
+        REG_COUPLE,
+        REG_PROTEGE,
         REG_INIT_COUNT
     };
+    //TO DO : couple, protégé ange, trublionnage
 
     // Liste des regex nécessaires pour l'init des camps et rôles
     std::array<std::regex, REG_INIT_COUNT> liste_reg_init_LGUHC{
         std::regex(R"(Vous êtes\s+([A-Za-zÀ-ÿ\- ]+))"),
         std::regex(R"(Objectif\s*:\s*Vous devez gagner\s+([A-Za-zÀ-ÿ\-]+))"),
-        std::regex(R"(\[\d{2}:\d{2}:\d{2}\] \[Client thread\/INFO\]: \[CHAT\] \[UHC\] PvP activé !$)")
+        std::regex(R"(\[\d{2}:\d{2}:\d{2}\] \[Client thread\/INFO\]: \[CHAT\] \[UHC\] PvP activé !$)"),
+        std::regex(R"(azertyuiopmlkjhgfdsqwxcvbn)"),
+        std::regex(R"(azertyuiopmlkjhgfdsqwxcvbn)")
     };
     RegexInitLGUHC iterator_regex = REG_ROLE;
 
@@ -81,6 +85,7 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
                 int id_role = search_id_role_by_name(role_name); // utilise ta fonction qui retourne -1 si non trouvé
                 if (id_role == -1) {
                     std::cout << "Traitement LGUHC : Le rôle '" + role_name + "' n'existe pas dans la base !\n\n\n";
+                    break;
                 }
                 else
                 {
@@ -98,10 +103,21 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
                 if (id_camp == -1) {
                     std::cout << "Traitement LGUHC : Le camp '" + camp_name + "' n'existe pas dans la base !\n\n\n";
                 }
+                else if (result.get_id_camp() != 4)
+                {
+                    std::cout << "Traitement LGUHC : Le camp ne change pas car tu es en couple !\n\n\n";
+                }
                 else
                 {
                     std::cout << "Traitement LGUHC : id_camp : " << id_camp << "\n\n";
-                    result.set_id_camp(id_camp);
+                    if (result.get_id_camp() > 4)
+                    {
+                        result.set_id_camp(id_camp + 4);
+                    }
+                    else
+                    {
+                        result.set_id_camp(id_camp);
+                    }
                 }
                 iterator_regex = static_cast<RegexInitLGUHC>(iterator_regex + 1);
                 break;
@@ -110,9 +126,26 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
                 std::cout << "Traitement LGUHC : erreur, le switch n'est pas bon.";
             }
             str_actual = matches.suffix().str();   //suprime le résultat trouvé pour npasser aux prochain 
-        }
-        if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[2]))
+        }//mettre iterator >1 dans le if qui suis et mettre des else if
+        else if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_45MIN]))
             return event_ingame_LGUHC(result, data_brut, str_actual, disconnected);
+        else if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_TRUBLIONNAGE]))
+        {
+            RegexInitLGUHC iterator_regex = REG_ROLE;
+        }
+        else if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_COUPLE]))
+        {
+            result.set_id_camp(4);
+        }
+        else if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_PROTEGE]))
+        {
+            if(result.get_id_camp()!=4)
+            {
+                result.set_id_camp(result.get_id_camp() + 4);
+                //1 : villageois, 2 : loup-garous, 3 : solos, 4 : couple, 5 : protégé, villageois, 6 : protégé, loups, 7 : protégé, solo
+                //je mets l'id camp à l'id camp de base plus 4 pour skip les quatres premiers cas
+            }
+        }
         str_actual = data_brut.give_line_kill_line();
     }
     return result;
