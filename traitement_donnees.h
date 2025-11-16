@@ -12,9 +12,9 @@
 //protégé
 //events selon le role attribué : cupidon, voleur, enfant sauvage, chien-loup, renégat, trublion, voleur
 //attribué le camp selon le role sinon
-data_game init_treatement_lguhc(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
+data_game event_ingame_LGUHC(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
 
-std::string init_camp_lguhc(int role);
+data_game init_treatement_lguhc(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
 
 //recherche de quelle type de game on fait, LGUHC, CHAINSAWMANUHC, AOTUHC
 data_game main_treatement(log_brut& data_brut);

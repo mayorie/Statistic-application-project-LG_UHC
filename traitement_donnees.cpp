@@ -15,17 +15,17 @@ data_game event_ingame_LGUHC(data_game& result, log_brut& data_brut, std::string
         if(std::regex_search(str_actual, matches, reg_vainqueur))
         {
             const std::string& gagnant = matches.str(1);
-            std::cout << "Traitement LGUHC : vainqueur : " << gagnant << '\n';
+            std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : vainqueur : " << gagnant << "\033[37m" << '\n';
 
             auto it = camps.find(gagnant);
             if (it != camps.end() && result.get_id_camp() == it->second)
             {
                 result.set_win(true);
-                std::cout << "Traitement LGUHC : tu as win.\n";
+                std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : tu as win." << "\033[37m" << "\n";
             }
             else
             {
-                std::cout << "Traitement LGUHC : tu es nul, tu as perdu.\n";
+                std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : tu es nul, tu as perdu." << "\033[37m" << "\n";
             }
 
             str_actual = matches.suffix().str();
@@ -71,7 +71,7 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
     };
     RegexInitLGUHC iterator_regex = REG_ROLE;
 
-    std::cout << "\n\n\n\nentré init_treatement_lguhc\n\n";
+    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " entré init_treatement_lguhc" << "\033[37m" << "\n";
     while (!data_brut.empty() && !disconnected)
     {
         if(iterator_regex <= 1 && std::regex_search(str_actual, matches, liste_reg_init_LGUHC[iterator_regex]))
@@ -81,15 +81,15 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
             case REG_ROLE:
             {
                 std::string role_name = matches.str(1);
-                std::cout << "Traitement LGUHC : role trouvé : " << role_name << "\n";
+                std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : role trouvé : " << role_name << "\033[37m" << "\n";
                 int id_role = search_id_role_by_name(role_name); // utilise ta fonction qui retourne -1 si non trouvé
                 if (id_role == -1) {
-                    std::cout << "Traitement LGUHC : Le rôle '" + role_name + "' n'existe pas dans la base !\n\n\n";
+                    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[31m" << " Traitement LGUHC : Le rôle '" + role_name + "' n'existe pas dans la base !" << "\033[37m" << "\n";
                     break;
                 }
                 else
                 {
-                    std::cout << "Traitement LGUHC : id_role : " << id_role << "\n\n";
+                    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : id_role : " << id_role << "\033[37m" << "\n";
                     result.set_id_role(id_role);
                 }
                 iterator_regex = static_cast<RegexInitLGUHC>(iterator_regex + 1);
@@ -98,18 +98,18 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
             case REG_CAMP:
             {
                 std::string camp_name = matches.str(1);
-                std::cout << "Traitement LGUHC : camp trouvé : " << camp_name << "\n";
+                std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : camp trouvé : " << camp_name << "\033[37m" << "\n";
                 int id_camp = search_id_camp_by_name(camp_name); // utilise ta fonction qui retourne -1 si non trouvé
                 if (id_camp == -1) {
-                    std::cout << "Traitement LGUHC : Le camp '" + camp_name + "' n'existe pas dans la base !\n\n\n";
+                    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[31m" << " Traitement LGUHC : Le camp '" + camp_name + "' n'existe pas dans la base !" << "\033[37m" << "\n";
                 }
                 else if (result.get_id_camp() != 4)
                 {
-                    std::cout << "Traitement LGUHC : Le camp ne change pas car tu es en couple !\n\n\n";
+                    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : Le camp ne change pas car tu es en couple !" << "\033[37m" << "\n";
                 }
                 else
                 {
-                    std::cout << "Traitement LGUHC : id_camp : " << id_camp << "\n\n";
+                    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : id_camp : " << id_camp << "\033[37m" << "\n";
                     if (result.get_id_camp() > 4)
                     {
                         result.set_id_camp(id_camp + 4);
@@ -123,7 +123,7 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
                 break;
             }
             default:
-                std::cout << "Traitement LGUHC : erreur, le switch n'est pas bon.";
+                std::cout << "\033[33m" << "[traitement_donnees]" << "\033[31m" << " Traitement LGUHC : erreur, le switch n'est pas bon." << "\033[37m" << "\n";
             }
             str_actual = matches.suffix().str();   //suprime le résultat trouvé pour npasser aux prochain 
         }//mettre iterator >1 dans le if qui suis et mettre des else if
@@ -175,11 +175,11 @@ data_game main_treatement(log_brut &data_brut)
             switch (iterator_regex)
             {
             case 0:
-                std::cout << "Traitement LGUHC : Nom de mode de jeu : " << matches.str(4) << "\n";
+                std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement général : Nom de mode de jeu : " << matches.str(4) << "\033[37m" << "\n";
                 if (matches.str(4) == "LG UHC") {
                     data_game result;
                     result.set_start_game("h : " + matches.str(1) + " min : " + matches.str(2) + " sec : " + matches.str(3));
-                    std::cout << "Traitement LGUHC : Début de game LG UHC.\n";
+                    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Traitement LGUHC : Début de game LG UHC." << "\033[37m" << "\n";
                     init_treatement_lguhc(result, data_brut, str_actual, disconnected);
                     result.merge_into_data_base();
                 }
@@ -188,6 +188,6 @@ data_game main_treatement(log_brut &data_brut)
         }
         str_actual = data_brut.give_line_kill_line();
     }
-    std::cout << "fin de fichier\n";
+    std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " Fin de fichier" << "\033[37m" << "\n";
     return data_game();
 }

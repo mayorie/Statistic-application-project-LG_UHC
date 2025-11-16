@@ -48,12 +48,11 @@ public:
 
         // Vérification du succès
         if (rc == SQLITE_DONE) {
-            std::cout << "[merge_into_data_base] Insertion réussie pour le jeu : "
-                << entry.start_game << std::endl;
+            std::cout  << "\033[36m" << "[data_game]" << "\033[32m" << " Insertion réussie pour le jeu : " << entry.start_game << "\033[37m" << std::endl;
             return true;
         }
         else {
-            std::cerr << "[merge_into_data_base] Échec de l'insertion (code SQLite : " << rc << ")" << std::endl;
+            std::cerr << "\033[36m" << "[data_game]" << "\033[32m" << " Échec de l'insertion (code SQLite : " << rc << ")" << "\033[37m" << std::endl;
             return false;
         }
     }

@@ -7,15 +7,15 @@ int create_bd_stats() {
     // Créer la base de données
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc) {
-        std::cerr << "Impossible d'ouvrir/creer la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir/creer la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return rc;
     }
-    std::cout << "Base de données ouverte/créée avec succès !" << std::endl;
+    std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " Base de données ouverte/créée avec succès !" << "\033[37m" << std::endl;
 
     // Activation des clés étrangères
     rc = sqlite3_exec(db, "PRAGMA foreign_keys = ON;", 0, 0, &errMsg);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur activation FOREIGN KEY: " << errMsg << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur activation FOREIGN KEY: " << errMsg << "\033[37m" << std::endl;
         sqlite3_free(errMsg);
     }
 
@@ -163,11 +163,11 @@ int create_bd_stats() {
 
     rc = sqlite3_exec(db, sqlCreate, 0, 0, &errMsg);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur création tables: " << errMsg << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur création tables: " << errMsg << "\033[37m" << std::endl;
         sqlite3_free(errMsg);
     }
     else {
-        std::cout << "Base de données YES." << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " Base de données créé avec succés." << "\033[37m" << std::endl;
     }
     return rc;
 }
@@ -181,7 +181,7 @@ int insert_game(int id_role, int id_camp, std::string start_game, bool win)
     sqlite3_stmt* stmt;
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return rc;
     }
 
@@ -191,7 +191,7 @@ int insert_game(int id_role, int id_camp, std::string start_game, bool win)
 
     rc = sqlite3_prepare_v2(db, sqlInsert, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur préparation requête: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         sqlite3_close(db);
         return rc;
     }
@@ -205,10 +205,10 @@ int insert_game(int id_role, int id_camp, std::string start_game, bool win)
     // Exécution
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_DONE) {
-        std::cerr << "Erreur insertion d'une game: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur insertion d'une game: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
     }
     else {
-        std::cout << "Insertion d'une game réussie !" << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " Insertion d'une game réussie !" << "\033[37m" << std::endl;
     }
 
     sqlite3_finalize(stmt);
@@ -222,7 +222,7 @@ int delete_game(int id_game)
     sqlite3_stmt* stmt;
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return rc;
     }
 
@@ -230,7 +230,7 @@ int delete_game(int id_game)
 
     rc = sqlite3_prepare_v2(db, sqlDelete, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur préparation requête: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         sqlite3_close(db);
         return rc;
     }
@@ -241,10 +241,10 @@ int delete_game(int id_game)
     // Exécution
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_DONE) {
-        std::cerr << "Erreur suppression de la game: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur suppression de la game: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
     }
     else {
-        std::cout << "Game avec id " << id_game << " supprimée avec succès !" << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " Game avec id " << id_game << " supprimée avec succès !" << "\033[37m" << std::endl;
     }
 
     sqlite3_finalize(stmt);
@@ -272,14 +272,14 @@ int select_all_from_table(const std::string& tableName)
         }
     }
     if (!valid) {
-        std::cerr << "Nom de table non autorisé : " << tableName << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Nom de table non autorisé : " << tableName << "\033[37m" << std::endl;
         return SQLITE_ERROR;
     }
 
     // Ouverture de la base
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return rc;
     }
 
@@ -288,7 +288,7 @@ int select_all_from_table(const std::string& tableName)
 
     rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur préparation requête: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         sqlite3_close(db);
         return rc;
     }
@@ -311,7 +311,7 @@ int select_all_from_table(const std::string& tableName)
     }
 
     if (rc != SQLITE_DONE) {
-        std::cerr << "Erreur lecture données: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur lecture données: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
     }
 
     sqlite3_finalize(stmt);
@@ -326,7 +326,7 @@ int delete_all_games()
     sqlite3_stmt* stmt;
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return rc;
     }
 
@@ -335,17 +335,17 @@ int delete_all_games()
 
     rc = sqlite3_prepare_v2(db, sqlDelete, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur préparation requête: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         sqlite3_close(db);
         return rc;
     }
 
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_DONE) {
-        std::cerr << "Erreur suppression de toutes les games: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur suppression de toutes les games: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
     }
     else {
-        std::cout << "Toutes les games ont été supprimées avec succès !" << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " Toutes les games ont été supprimées avec succès !" << "\033[37m" << std::endl;
     }
 
     sqlite3_finalize(stmt);
@@ -363,7 +363,7 @@ int search_id_role_by_name(const std::string& role_name)
     // Ouverture de la base
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return -1;
     }
 
@@ -372,7 +372,7 @@ int search_id_role_by_name(const std::string& role_name)
     // Préparation de la requête
     rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur préparation requête: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         sqlite3_close(db);
         return -1;
     }
@@ -384,10 +384,10 @@ int search_id_role_by_name(const std::string& role_name)
     rc = sqlite3_step(stmt);
     if (rc == SQLITE_ROW) {
         role_id = sqlite3_column_int(stmt, 0);
-        std::cout << "SQL : Role '" << role_name << "' trouvé avec ID = " << role_id << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " SQL : Role '" << role_name << "' trouvé avec ID = " << role_id << "\033[37m" << std::endl;
     }
     else {
-        std::cout << "Aucun rôle trouvé pour le nom '" << role_name << "'." << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[31m" << " Aucun rôle trouvé pour le nom '" << role_name << "'." << "\033[37m" << std::endl;
     }
 
     sqlite3_finalize(stmt);
@@ -406,7 +406,7 @@ int search_id_camp_by_name(const std::string& camp_name)
     // Ouverture de la base
     int rc = sqlite3_open("bd_stats.db", &db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Impossible d'ouvrir la base: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         return -1;
     }
 
@@ -415,7 +415,7 @@ int search_id_camp_by_name(const std::string& camp_name)
     // Préparation de la requête
     rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erreur préparation requête: " << sqlite3_errmsg(db) << std::endl;
+        std::cerr << "\033[35m" << "[creation_bd]" << "\033[31m" << " Erreur préparation requête: " << sqlite3_errmsg(db) << "\033[37m" << std::endl;
         sqlite3_close(db);
         return -1;
     }
@@ -427,10 +427,10 @@ int search_id_camp_by_name(const std::string& camp_name)
     rc = sqlite3_step(stmt);
     if (rc == SQLITE_ROW) {
         camp_id = sqlite3_column_int(stmt, 0);
-        std::cout << "SQL : Camp '" << camp_name << "' trouvé avec ID = " << camp_id << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[32m" << " SQL : Camp '" << camp_name << "' trouvé avec ID = " << camp_id << "\033[37m" << std::endl;
     }
     else {
-        std::cout << "Aucun camp trouvé pour le nom '" << camp_name << "'." << std::endl;
+        std::cout << "\033[35m" << "[creation_bd]" << "\033[31m" << " Aucun camp trouvé pour le nom '" << camp_name << "'." << "\033[37m" << std::endl;
     }
 
     sqlite3_finalize(stmt);
