@@ -74,7 +74,11 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
     std::cout << "\033[33m" << "[traitement_donnees]" << "\033[32m" << " entré init_treatement_lguhc" << "\033[37m" << "\n";
     while (!data_brut.empty() && !disconnected)
     {
-        if(iterator_regex <= 1 && std::regex_search(str_actual, matches, liste_reg_init_LGUHC[iterator_regex]))
+        if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_45MIN]))
+        {
+            return event_ingame_LGUHC(result, data_brut, str_actual, disconnected);
+        }
+        else if(iterator_regex <= 1 && std::regex_search(str_actual, matches, liste_reg_init_LGUHC[iterator_regex]))
         {
             switch (iterator_regex)
             {
@@ -126,9 +130,7 @@ data_game init_treatement_lguhc(data_game &result,log_brut &data_brut, std::stri
                 std::cout << "\033[33m" << "[traitement_donnees]" << "\033[31m" << " Traitement LGUHC : erreur, le switch n'est pas bon." << "\033[37m" << "\n";
             }
             str_actual = matches.suffix().str();   //suprime le résultat trouvé pour npasser aux prochain 
-        }//mettre iterator >1 dans le if qui suis et mettre des else if
-        else if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_45MIN]))
-            return event_ingame_LGUHC(result, data_brut, str_actual, disconnected);
+        }
         else if (std::regex_search(str_actual, matches, liste_reg_init_LGUHC[REG_TRUBLIONNAGE]))
         {
             RegexInitLGUHC iterator_regex = REG_ROLE;
