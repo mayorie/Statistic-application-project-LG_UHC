@@ -85,6 +85,7 @@ int create_bd_stats() {
         "('Couple'),"
         "('Special');"
 
+
         // insert role
         "INSERT INTO role (name_role, id_gameplay, id_camp) VALUES"
         "('Analiste', 1, 1),"
