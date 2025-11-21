@@ -133,6 +133,7 @@
     <ClInclude Include="recup_donnee_brut.h" />
     <ClInclude Include="sqlite3.h" />
     <ClInclude Include="traitement_donnees.h" />
+    <ClInclude Include="traitement_LG.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="creation_bd.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="recup_donnee_brut.cpp" />
     <ClCompile Include="sqlite3.c" />
     <ClCompile Include="traitement_donnees.cpp" />
+    <ClCompile Include="traitement_LG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

@@ -3,6 +3,7 @@
 #include "recup_donnee_brut.h"
 #include "sqlite3.h"
 #include "creation_bd.h"
+#include "traitement_LG.h"
 #include <array>
 #include <regex>
 #include <unordered_map>
@@ -12,10 +13,36 @@
 //protégé
 //events selon le role attribué : cupidon, voleur, enfant sauvage, chien-loup, renégat, trublion, voleur
 //attribué le camp selon le role sinon
+<<<<<<< Updated upstream
 data_game init_treatement_lguhc(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
+=======
+//data_game event_ingame_LGUHC(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected);
+
+//data_game init_treatement_lguhc(data_game& result, log_brut& data_brut, std::string& str_actual, bool disconnected)//;
+>>>>>>> Stashed changes
 
 std::string init_camp_lguhc(int role);
 
 //recherche de quelle type de game on fait, LGUHC, CHAINSAWMANUHC, AOTUHC
-data_game main_treatement(log_brut& data_brut);
-
+//data_game main_treatement(log_brut& data_brut);
+/*
+enum RegexInitLGUHC {
+    REG_ROLE,
+    REG_CAMP,
+    REG_45MIN,
+    REG_TRUBLIONNAGE,
+    REG_COUPLE,
+    REG_PROTEGE,
+    REG_VAINQUEUR,
+    REG_ZIZANIE,
+    REG_INFECTE,
+    REG_LOUP_SOLITAIRE,
+    REG_VOLEUR,
+    REG_ES_MODEL_MORT,
+    REG_RENEGAT,
+    REG_CUPI_COUPLE_MORT,
+    REG_CUPI_RANCUNIER,
+    REG_VACCINATION,
+    REG_INIT_COUNT
+};
+*/
